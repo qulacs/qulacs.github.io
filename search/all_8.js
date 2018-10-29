@@ -45,7 +45,10 @@ var searchData=
   ['cppctype',['CPPCTYPE',['../type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f',1,'type.hpp']]],
   ['cptp',['CPTP',['../namespacegate.html#a021661ad7b10e9f2577980f760a76a85',1,'gate']]],
   ['create_5fcircuit',['create_circuit',['../class_quantum_circuit_builder.html#af0d12a5b24573acce525056929dd6082',1,'QuantumCircuitBuilder']]],
+  ['create_5fobservable_5ffrom_5fopenfermion_5ffile',['create_observable_from_openfermion_file',['../namespaceobservable.html#a0c2d75ea21bd9050732d0ae538cd572c',1,'observable']]],
+  ['create_5fobservable_5ffrom_5fopenfermion_5ftext',['create_observable_from_openfermion_text',['../namespaceobservable.html#af7fa40693d0b15795c8060d3006e866e',1,'observable']]],
   ['create_5fquantum_5fgate_5ffrom_5fstring',['create_quantum_gate_from_string',['../namespacegate.html#a036f67b109f55229afa2efcf118a2f0f',1,'gate']]],
+  ['create_5fsplit_5fobservable',['create_split_observable',['../namespaceobservable.html#a9ceda396f44392f7c5a3e1919beb8790',1,'observable']]],
   ['cz',['CZ',['../namespacegate.html#a3e600801ff7c5ae10c03473409b68be6',1,'gate']]],
   ['c_2b_2b_20quantum_20circuit_20simulator_20for_20research',['C++ Quantum Circuit Simulator for research',['../md_0__about__c_p_p_s_i_m.html',1,'']]],
   ['c_2b_2b_20tutorial',['C++ Tutorial',['../md_2__tutorial__c_p_p.html',1,'']]]

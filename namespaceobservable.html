@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <title>Qulacs: /Users/tenninyan/Soft/qunasys/qulacs/src/cppsim/circuit.cpp File Reference</title>
+        <title>Qulacs: observable Namespace Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -71,9 +71,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -112,94 +112,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e04a1e360dcd38d653639da9f7b0221b.html">cppsim</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">circuit.cpp File Reference</div>  </div>
+<div class="title">observable Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &quot;<a class="el" href="gate_8hpp_source.html">gate.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gate__matrix_8hpp_source.html">gate_matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gate__factory_8hpp_source.html">gate_factory.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="circuit_8hpp_source.html">circuit.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pauli__operator_8hpp_source.html">pauli_operator.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="observable_8hpp_source.html">observable.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad5830ca4d07a21a0a008ef044c990436"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuit_8cpp.html#ad5830ca4d07a21a0a008ef044c990436">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> &amp;circuit)</td></tr>
-<tr class="separator:ad5830ca4d07a21a0a008ef044c990436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef7b24470cc5e4b91b083d0281cd29d2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuit_8cpp.html#aef7b24470cc5e4b91b083d0281cd29d2">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> *gate)</td></tr>
-<tr class="separator:aef7b24470cc5e4b91b083d0281cd29d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2d75ea21bd9050732d0ae538cd572c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observable.html">Observable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceobservable.html#a0c2d75ea21bd9050732d0ae538cd572c">create_observable_from_openfermion_file</a> (std::string file_path)</td></tr>
+<tr class="separator:a0c2d75ea21bd9050732d0ae538cd572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fa40693d0b15795c8060d3006e866e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observable.html">Observable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceobservable.html#af7fa40693d0b15795c8060d3006e866e">create_observable_from_openfermion_text</a> (std::string text)</td></tr>
+<tr class="separator:af7fa40693d0b15795c8060d3006e866e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ceda396f44392f7c5a3e1919beb8790"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="class_observable.html">Observable</a> *, <a class="el" href="class_observable.html">Observable</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceobservable.html#a9ceda396f44392f7c5a3e1919beb8790">create_split_observable</a> (std::string file_path)</td></tr>
+<tr class="separator:a9ceda396f44392f7c5a3e1919beb8790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad5830ca4d07a21a0a008ef044c990436"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5830ca4d07a21a0a008ef044c990436">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
+<a id="a0c2d75ea21bd9050732d0ae538cd572c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2d75ea21bd9050732d0ae538cd572c">&#9670;&nbsp;</a></span>create_observable_from_openfermion_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_observable.html">Observable</a> * observable::create_observable_from_openfermion_file </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> &amp;&#160;</td>
-          <td class="paramname"><em>circuit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
+<p>OpenFermionから出力されたオブザーバブルのテキストファイルを読み込んでObservableを生成します。オブザーバブルのqubit数はファイル読み込み時に、オブザーバブルの構成に必要なqubit数となります。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>OpenFermion形式のオブザーバブルのファイル名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Observableのインスタンス </dd></dl>
 
 </div>
 </div>
-<a id="aef7b24470cc5e4b91b083d0281cd29d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7b24470cc5e4b91b083d0281cd29d2">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+<a id="af7fa40693d0b15795c8060d3006e866e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fa40693d0b15795c8060d3006e866e">&#9670;&nbsp;</a></span>create_observable_from_openfermion_text()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_observable.html">Observable</a> * observable::create_observable_from_openfermion_text </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> *&#160;</td>
-          <td class="paramname"><em>gate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
+<p>OpenFermionの出力テキストを読み込んでObservableを生成します。オブザーバブルのqubit数はファイル読み込み時に、オブザーバブルの構成に必要なqubit数となります。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>OpenFermion形式のテキスト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Observableのインスタンス </dd></dl>
+
+</div>
+</div>
+<a id="a9ceda396f44392f7c5a3e1919beb8790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ceda396f44392f7c5a3e1919beb8790">&#9670;&nbsp;</a></span>create_split_observable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> std::pair&lt; <a class="el" href="class_observable.html">Observable</a> *, <a class="el" href="class_observable.html">Observable</a> * &gt; observable::create_split_observable </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OpenFermion形式のファイルを読んで、対角なObservableと非対角なObservableを返す。オブザーバブルのqubit数はファイル読み込み時に、オブザーバブルの構成に必要なqubit数となります。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>OpenFermion形式のオブザーバブルのファイル名 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

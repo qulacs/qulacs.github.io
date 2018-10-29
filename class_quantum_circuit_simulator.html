@@ -140,8 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaceb3b6d4d8a607fd0417880f011beeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db41eae7576c4fc3f0044c1593c5b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#a6db41eae7576c4fc3f0044c1593c5b5d">simulate_range</a> (UINT start, UINT end)</td></tr>
 <tr class="separator:a6db41eae7576c4fc3f0044c1593c5b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105d690b3e574e06514efdff42e8d4c6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#a105d690b3e574e06514efdff42e8d4c6">get_expectation_value</a> (const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> *hamiltonian)</td></tr>
-<tr class="separator:a105d690b3e574e06514efdff42e8d4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d554b0ad8a3ed7e28b21d4d4c79c1d6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#a4d554b0ad8a3ed7e28b21d4d4c79c1d6">get_expectation_value</a> (const <a class="el" href="class_observable.html">Observable</a> *observable)</td></tr>
+<tr class="separator:a4d554b0ad8a3ed7e28b21d4d4c79c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3eafa0daa8febc0850c70882ad2813"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#ade3eafa0daa8febc0850c70882ad2813">get_gate_count</a> ()</td></tr>
 <tr class="separator:ade3eafa0daa8febc0850c70882ad2813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dbad054d401d64f87ff5506df585a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#a2dbad054d401d64f87ff5506df585a31">copy_state_to_buffer</a> ()</td></tr>
@@ -247,8 +247,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a105d690b3e574e06514efdff42e8d4c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105d690b3e574e06514efdff42e8d4c6">&#9670;&nbsp;</a></span>get_expectation_value()</h2>
+<a id="a4d554b0ad8a3ed7e28b21d4d4c79c1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d554b0ad8a3ed7e28b21d4d4c79c1d6">&#9670;&nbsp;</a></span>get_expectation_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,16 +256,16 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">double QuantumCircuitSimulator::get_expectation_value </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> *&#160;</td>
-          <td class="paramname"><em>hamiltonian</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_observable.html">Observable</a> *&#160;</td>
+          <td class="paramname"><em>observable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>現在の量子状態の受け取ったハミルトニアンの期待値を計算する。</p>
+<p>現在の量子状態の受け取ったオブザーバブルの期待値を計算する。</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hamiltonian</td><td>ハミルトニアン </td></tr>
+    <tr><td class="paramname">observable</td><td>オブザーバブル </td></tr>
   </table>
   </dd>
 </dl>
