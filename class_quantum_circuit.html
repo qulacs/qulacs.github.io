@@ -214,10 +214,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7592828182fe4aedc2aca43eed19889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0016d43e59fbe725bf4588f003655df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#af0016d43e59fbe725bf4588f003655df">add_multi_Pauli_rotation_gate</a> (const <a class="el" href="class_pauli_operator.html">PauliOperator</a> &amp;pauli_operator)</td></tr>
 <tr class="separator:af0016d43e59fbe725bf4588f003655df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c9466880cc5c9f982d9a635afca094"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#a07c9466880cc5c9f982d9a635afca094">add_diagonal_hamiltonian_rotation_gate</a> (const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> &amp;hamiltonian, double angle)</td></tr>
-<tr class="separator:a07c9466880cc5c9f982d9a635afca094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b73a32fb2e3cc05f7b2c128f596f07b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#a6b73a32fb2e3cc05f7b2c128f596f07b">add_hamiltonian_rotation_gate</a> (const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> &amp;hamiltonian, double angle, UINT num_repeats=0)</td></tr>
-<tr class="separator:a6b73a32fb2e3cc05f7b2c128f596f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c5870247eb1e9e70e269faec6222f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#ae8c5870247eb1e9e70e269faec6222f6">add_diagonal_observable_rotation_gate</a> (const <a class="el" href="class_observable.html">Observable</a> &amp;observable, double angle)</td></tr>
+<tr class="separator:ae8c5870247eb1e9e70e269faec6222f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2dd52ae23df91db6e1d35d44193848"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#abc2dd52ae23df91db6e1d35d44193848">add_observable_rotation_gate</a> (const <a class="el" href="class_observable.html">Observable</a> &amp;observable, double angle, UINT num_repeats=0)</td></tr>
+<tr class="separator:abc2dd52ae23df91db6e1d35d44193848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af75360efc77f53a6a29eeaddb8b11dea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#af75360efc77f53a6a29eeaddb8b11dea">add_dense_matrix_gate</a> (UINT target_index, const <a class="el" href="type_8hpp.html#a7735902f9834765a562309c40bffbdf2">ComplexMatrix</a> &amp;matrix)</td></tr>
 <tr class="separator:af75360efc77f53a6a29eeaddb8b11dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2b14092fac07e66190d5dc1c6da29c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#aa2b14092fac07e66190d5dc1c6da29c1">add_dense_matrix_gate</a> (std::vector&lt; UINT &gt; target_index_list, const <a class="el" href="type_8hpp.html#a7735902f9834765a562309c40bffbdf2">ComplexMatrix</a> &amp;matrix)</td></tr>
@@ -507,8 +507,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a07c9466880cc5c9f982d9a635afca094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c9466880cc5c9f982d9a635afca094">&#9670;&nbsp;</a></span>add_diagonal_hamiltonian_rotation_gate()</h2>
+<a id="ae8c5870247eb1e9e70e269faec6222f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c5870247eb1e9e70e269faec6222f6">&#9670;&nbsp;</a></span>add_diagonal_observable_rotation_gate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,10 +517,10 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QuantumCircuit::add_diagonal_hamiltonian_rotation_gate </td>
+          <td class="memname">void QuantumCircuit::add_diagonal_observable_rotation_gate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> &amp;&#160;</td>
-          <td class="paramname"><em>hamiltonian</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramname"><em>observable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -540,10 +540,10 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitハミルトニアン回転ゲートを追加する。(対角のみ)</p>
-<p>n-qubitハミルトニアン回転ゲートを作用する。ここで用いるハミルトニアンは、対角である必要がある。 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>n-qubitオブザーバブル回転ゲートを追加する。(対角のみ)</p>
+<p>n-qubitオブザーバブル回転ゲートを作用する。ここで用いるオブザーバブルは、対角である必要がある。 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hamiltonian</td><td>追加するハミルトニアン </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">observable</td><td>追加するオブザーバブル </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
   </table>
   </dd>
@@ -738,57 +738,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b73a32fb2e3cc05f7b2c128f596f07b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b73a32fb2e3cc05f7b2c128f596f07b">&#9670;&nbsp;</a></span>add_hamiltonian_rotation_gate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QuantumCircuit::add_hamiltonian_rotation_gate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_hamiltonian.html">Hamiltonian</a> &amp;&#160;</td>
-          <td class="paramname"><em>hamiltonian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UINT&#160;</td>
-          <td class="paramname"><em>num_repeats</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>n-qubitハミルトニアン回転ゲートを追加する。</p>
-<p>Suzuki-Trotter展開によりn-qubitハミルトニアン回転ゲートを作用する。ここで用いるハミルトニアンは、対角でなくてもよい。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hamiltonian</td><td>追加するハミルトニアン </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \( \theta \) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_repeats</td><td>Trotter展開をする際の分割数 \(N\)。指定しない場合は、関数内部で \( \#qubit \cdot \theta / N = 0.01\) となるように設定される。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="af62ab37081fa5a3bc68744c602cd22e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af62ab37081fa5a3bc68744c602cd22e3">&#9670;&nbsp;</a></span>add_multi_Pauli_gate() <span class="overload">[1/2]</span></h2>
 
@@ -944,6 +893,57 @@ Friends</h2></td></tr>
 <p>n-qubitパウリ回転ゲートを作用する。 回転角はPauliOperatorの係数を用いる。 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pauli_operator</td><td>追加するパウリ演算子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc2dd52ae23df91db6e1d35d44193848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2dd52ae23df91db6e1d35d44193848">&#9670;&nbsp;</a></span>add_observable_rotation_gate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuantumCircuit::add_observable_rotation_gate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramname"><em>observable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>num_repeats</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>n-qubitオブザーバブル回転ゲートを追加する。</p>
+<p>Suzuki-Trotter展開によりn-qubitオブザーバブル回転ゲートを作用する。ここで用いるオブザーバブルは、対角でなくてもよい。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">observable</td><td>追加するオブザーバブル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \( \theta \) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_repeats</td><td>Trotter展開をする際の分割数 \(N\)。指定しない場合は、関数内部で \( \#qubit \cdot \theta / N = 0.01\) となるように設定される。 </td></tr>
   </table>
   </dd>
 </dl>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s',['S',['../namespacegate.html#a1e413d9a8a50f2afc5c0bb4c2665a166',1,'gate']]],
-  ['sampling',['sampling',['../class_quantum_state_base.html#a9b4a8e7f9f42734a125eced245cff83c',1,'QuantumStateBase::sampling()'],['../class_quantum_state_cpu.html#a1d1f84c333f3d12060a47720b68cadc1',1,'QuantumStateCpu::sampling()']]],
+  ['sampling',['sampling',['../class_quantum_state_base.html#a03e4f746bd52c971d450910662db5c9b',1,'QuantumStateBase::sampling()'],['../class_quantum_state_cpu.html#a728eb8a61c1bfecf94bf8d6e961413ac',1,'QuantumStateCpu::sampling()']]],
   ['sdag',['Sdag',['../namespacegate.html#a4dd26a2fa82ed0d096f3b086a10d0ae2',1,'gate']]],
   ['set_5fclassical_5fvalue',['set_classical_value',['../class_quantum_state_base.html#ac484af7d38166364fc1116b932a54910',1,'QuantumStateBase']]],
   ['set_5fcomputational_5fbasis',['set_computational_basis',['../class_quantum_state_base.html#a1e52c51458f509db825ab9ae38be8fb7',1,'QuantumStateBase::set_computational_basis()'],['../class_quantum_state_cpu.html#ae47f17686cf8c69e3289fa91df333d47',1,'QuantumStateCpu::set_computational_basis()']]],

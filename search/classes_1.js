@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hamiltonian',['Hamiltonian',['../class_hamiltonian.html',1,'']]]
+  ['observable',['Observable',['../class_observable.html',1,'']]]
 ];

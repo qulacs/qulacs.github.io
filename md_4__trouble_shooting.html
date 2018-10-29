@@ -114,35 +114,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><h2>C/C++のライブラリに関するエラー</h2>
 <h3>csim_sharedのリンク時にエラーが発生する</h3>
-<p>コンパイラがgcc/g++になっていません。cmakeコマンドを行う際にver7以降のgcc/g++を指定してください。</p>
-<h3>cmakeコマンドが終わらない、CMAKE_CXX_COMPILERがフルパスではないというエラーが出る</h3>
-<p>CMakeLists.txtでset関数でCMAKE_CXX_COMPILERを設定し、かつ./vqcsim/python/CMakeLists.txtでpybind11がadd_subdirectoryされている場合に生じます。 CMAKE_CXX_COMPILERをcmakeコマンドの引数として指定することで回避できます。</p>
+<p>コンパイラがgcc/g++になっていません。cmakeコマンドを行う際にver7以降のgcc/g++を指定してください。Macの標準のgccはバックエンドがclangになっているので注意してください。</p>
 <h3>mingwでpycppsimをコンパイルする時に、Posix系のヘッダファイル(crypt.h, sys/select.hなど)が見つからないというエラーが出る。リンク時に-lintlが見つからないというエラーが出る。</h3>
-<p>gcc/g++とpythonで32bit/64bitが異なると生じます。</p>
+<p>gcc/g++とpythonで32bit/64bitが異なると生じることを確認しています。</p>
 <h2>pythonライブラリに関するエラー</h2>
-<h3>複数のpython3を抱えており、特定のバージョンに対してビルドを行いたい</h3>
-<p>cmakeの際に-D PYTHON_EXECUTABLE:FILEPATH=/usr/bin/pythonx.xなどpythonのバイナリのパスを直接指定することでできるかもしれません。</p>
-<h3>以下のいずれかのエラーが出る</h3>
-<ul>
-<li>cmake時にCould NOT find PythonLibsというエラーが出る</li>
-<li>make python時に&lt;Python.h&gt;が見つかりませんというエラーが出る</li>
-<li>make pythonでのpycppsimのリンク時に"Py_hoge"という名前のシンボルが見つからないというエラーが大量に出る</li>
-</ul>
-<p>pythonのライブラリの個所が正しく特定できていません。いくつかの環境で、pythonがインストールされているにもかかわらずこのエラーが出ることを確認しています。</p>
-<p>以下の手順で正しくビルドできることがあります。</p>
-<p>1.</p>
-<div class="fragment"><div class="line">python3-config --includes</div><div class="line">python3-config --libs</div><div class="line">python3-config --ldflags</div></div><!-- fragment --><p> の三つのコマンドが実行可能で、一行ずつ出力があることを確認してください。python3-configが存在しない場合、python3-devがインストールされているか確認してください。</p>
-<p>2.</p>
-<p>./vqcsim/pythonのCMakeList.txtをCMakeLists.oldにリネームし、CMakeLists.subをCMakeLists.txtにリネームします。 次にエディタでCMakeLists.txtを開き、 </p><div class="fragment"><div class="line">&lt;paste output of python3-config --includes&gt;</div><div class="line">&lt;paste output of python3-config --libs&gt;</div><div class="line">&lt;paste output of python3-config --ldflags&gt;</div></div><!-- fragment --><p> の３か所を、それぞれ1.のコマンドの出力の一行に差し替えます。</p>
-<p>3.</p>
-<p>この状態で再度cmakeを実行してください。</p>
+<h3>複数のpythonを抱えており、特定のバージョンに対してビルドを行いたい</h3>
+<p>cmakeの際に-D PYTHON_EXECUTABLE:FILEPATH=/usr/bin/pythonx.xなどpythonのバイナリのパスを直接指定することでできます。しかし、原則的にpyenvやcondaを用いて標準のpythonを変えてからビルドすることをお勧めします。</p>
 <h2>import時に「init関数がない」旨のエラーが出る。</h2>
 <p>生成した.dll,.pydは名前とモジュール名が一致している必要があるため、ライブラリ名を変更してimportを試みるとこのエラーが出ます。</p>
-<p>そうでない場合は、ビルドしたpythonとそれをimportしているpythonのバージョンが異なる可能性が高いです。pycppsimはpython3でビルドされているため、python3からimportしてください。</p>
-<h3>import時にSegmentation faultが生じる。あるいは何も出力せずにpythonが終了する</h3>
-<p>ビルドしたpythonとそれをimportしているpythonのバージョンが異なる可能性が高いです。pycppsimはpython3でビルドされているため、python3からimportしてください。</p>
-<p>そうでない場合、LTO(Link Time Optimization)が悪さをしている可能性があります。一部の環境では-fltoオプションによる最適化を行うとライブラリのロード時にエラーが発生して終了するようです。主にMinGWでその現象が確認されていますが、-fltoオプションを外すことで問題が解決するかもしれません。</p>
-<p>上記でも改善しない場合は「cmake時にCould NOT found PythonLibsというエラーが出る」の対策を試してください。 </p>
+<p>そうでない場合は、ビルドしたpythonとそれをimportしているpythonのバージョンが異なる可能性が高いです。</p>
+<h3>import時にSegmentation faultが生じる。何も出力せずにpythonが終了する。Py_...という関数が見つからないと言われる。importしようとしてもファイルが存在しないと言われる。など。</h3>
+<p>ビルドしたpythonとそれをimportしているpythonのバージョンが異なる可能性が高いです。 </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

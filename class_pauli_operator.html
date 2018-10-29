@@ -150,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45764fcf75dc7b44e509146365a47b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c25e6f22ca5fdd6f1d683334fc050b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pauli_operator.html#a59c25e6f22ca5fdd6f1d683334fc050b">get_expectation_value</a> (const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state) const</td></tr>
 <tr class="separator:a59c25e6f22ca5fdd6f1d683334fc050b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123a039472dc13dfe20fcc51cc0a4462"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pauli_operator.html#a123a039472dc13dfe20fcc51cc0a4462">get_transition_amplitude</a> (const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state_bra, const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state_ket) const</td></tr>
+<tr class="separator:a123a039472dc13dfe20fcc51cc0a4462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511703d61edcbe2979c8f2a96cf64d94"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pauli_operator.html">PauliOperator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pauli_operator.html#a511703d61edcbe2979c8f2a96cf64d94">copy</a> () const</td></tr>
 <tr class="separator:a511703d61edcbe2979c8f2a96cf64d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -567,6 +569,51 @@ Public Member Functions</h2></td></tr>
 <p>自身が保持するパウリ演算子を返す。</p>
 <p>それぞれが作用するqubitは PauliOperator::get_index_listで得られる添字のリストの対応する場所から得られる。</p>
 <dl class="section return"><dt>Returns</dt><dd>自身の保持するパウリ演算子のリスト。(I,X,Y,Z)が(0,1,2,3)に対応する。 </dd></dl>
+
+</div>
+</div>
+<a id="a123a039472dc13dfe20fcc51cc0a4462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123a039472dc13dfe20fcc51cc0a4462">&#9670;&nbsp;</a></span>get_transition_amplitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a> PauliOperator::get_transition_amplitude </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td>
+          <td class="paramname"><em>state_bra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td>
+          <td class="paramname"><em>state_ket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>量子状態に対応するパウリ演算子の遷移振幅を計算する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state_bra</td><td>遷移先の量子状態 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state_ket</td><td>遷移元の量子状態 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>state_bra, state_ketに対応する遷移振幅 </dd></dl>
 
 </div>
 </div>
