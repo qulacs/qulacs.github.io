@@ -151,13 +151,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>引数にとった文字列を、PauliOperatorで渡すことができる形に整形します。この関数は第一引数に与えた文字列に破壊的な変更を加えます。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ops</td><td>演算子と添字が隣り合った文字列。(example: "X12 Y13 Z5" に対して, "X 12 Y 13 Z 5"のように変更を加えます。) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -186,14 +179,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><code>pauli_id_list</code>からパウリ行列を<code>matrix</code>生成する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>作成する行列を格納する行列の参照 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_id_list</td><td>生成するパウリ演算子のIDのリスト。 \({I,X,Y,Z}\)が \({0,1,2,3}\)に対応する。 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -222,30 +207,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>第一引数の文字列を第二引数の文字列で区切ったリストを返します。この関数は第一引数に対して非破壊です。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>分割したい文字列。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">delim</td><td>区切り文字列。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>第一引数に含まれる区切り文字列で区切った文字列。(example: split("aabcaaca", "bc") -&gt; {"aa", "aa", "a"} </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>

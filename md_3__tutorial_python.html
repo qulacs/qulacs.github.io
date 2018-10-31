@@ -178,15 +178,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>状態に対してオブザーバブルの期待値を評価できます。 </p><div class="fragment"><div class="line">from qulacs import Observable, QuantumState</div><div class="line"></div><div class="line">n = 5</div><div class="line">coef = 2.0</div><div class="line">Pauli_string = &quot;X 0 X 1 Y 2 Z 4&quot;</div><div class="line">observable = Observable(n)</div><div class="line">observable.add_operator(coef,Pauli_string)</div><div class="line"></div><div class="line">state = QuantumState(n)</div><div class="line">state.set_Haar_random_state()</div><div class="line"># 期待値の計算</div><div class="line">value = observable.get_expectation_value(state)</div><div class="line">print(value)</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>

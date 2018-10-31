@@ -182,15 +182,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>オブザーバブル \(H\)の回転 \(e^{i\theta H}\)をTrotter展開によって行います。<code>num_repeats</code>はデフォルト値では以下のコードのようになっていますが、ユーザがオプションで指定することが可能です。 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="circuit_8hpp.html">cppsim/circuit.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="state_8hpp.html">cppsim/state.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="observable_8hpp.html">cppsim/observable.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> maint() {</div><div class="line">    UINT n;</div><div class="line">    UINT num_repeats;</div><div class="line">    <span class="keywordtype">double</span> theta;</div><div class="line"></div><div class="line">    <span class="keywordtype">double</span> res;</div><div class="line"></div><div class="line">    <a class="code" href="class_observable.html">Observable</a> <a class="code" href="namespaceobservable.html">observable</a>(<span class="stringliteral">&quot;../test/cppsim/H2.txt&quot;</span>); </div><div class="line"></div><div class="line">    n = <a class="code" href="namespaceobservable.html">observable</a>.get_qubit_count();</div><div class="line">    <a class="code" href="class_quantum_state_cpu.html">QuantumState</a> <a class="code" href="namespacestate.html">state</a>(n);  </div><div class="line">    <a class="code" href="namespacestate.html">state</a>.set_computational_basis(0);</div><div class="line"></div><div class="line">    <a class="code" href="class_quantum_circuit.html">QuantumCircuit</a> circuit(n);</div><div class="line">    num_repeats = (UINT) std::ceil(theta * (<span class="keywordtype">double</span>)n* 100.);</div><div class="line">    circuit.add_hamiltonian_rotation_gate(<a class="code" href="namespaceobservable.html">observable</a>, angle, num_repeats);</div><div class="line">    circuit.update_quantum_state(&amp;<a class="code" href="namespacestate.html">state</a>);</div><div class="line"></div><div class="line">    res = <a class="code" href="namespaceobservable.html">observable</a>.get_expectation_value(&amp;<a class="code" href="namespacestate.html">state</a>);</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>
