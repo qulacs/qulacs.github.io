@@ -153,9 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afef4ef079f863dc3f7f0dc1fd5005ffc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_simulator.html#afef4ef079f863dc3f7f0dc1fd5005ffc">get_state_ptr</a> () const</td></tr>
 <tr class="separator:afef4ef079f863dc3f7f0dc1fd5005ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>量子回路をシミュレートするためのクラス </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acef8320289f481d123e473bb07076496"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acef8320289f481d123e473bb07076496">&#9670;&nbsp;</a></span>QuantumCircuitSimulator()</h2>
 
@@ -181,14 +179,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>コンストラクタ</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">circuit</td><td>シミュレートする量子回路 </td></tr>
-    <tr><td class="paramname">initial_state</td><td>初期量子状態。デフォルト値はNULLで、NULLの場合は0状態に初期化される。 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -206,7 +196,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>デストラクタ </p>
 
 </div>
 </div>
@@ -225,7 +214,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>バッファの量子状態を現在の量子状態へコピーする </p>
 
 </div>
 </div>
@@ -243,7 +231,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子状態をバッファへコピーする </p>
 
 </div>
 </div>
@@ -262,14 +249,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>現在の量子状態の受け取ったオブザーバブルの期待値を計算する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">observable</td><td>オブザーバブル </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>期待値 </dd></dl>
 
 </div>
 </div>
@@ -287,8 +266,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路中のゲートの数を取得する</p>
-<dl class="section return"><dt>Returns</dt><dd>ゲートの数 </dd></dl>
 
 </div>
 </div>
@@ -314,8 +291,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>現在の量子状態のポインタを取得する</p>
-<dl class="section return"><dt>Returns</dt><dd>量子状態のポインタ </dd></dl>
 
 </div>
 </div>
@@ -333,7 +308,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ランダムな量子状態に初期化する。 </p>
 
 </div>
 </div>
@@ -352,13 +326,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子状態を計算基底に初期化する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">computationl_basis</td><td>初期化する計算基底を二進数にした値 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -376,7 +343,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路全体シミュレートする。 </p>
 
 </div>
 </div>
@@ -405,14 +371,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路を<code>start</code>から<code>end</code>までの区間シミュレートする</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td>シミュレートを開始する添え字 </td></tr>
-    <tr><td class="paramname">end</td><td>シミュレートを終了する添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -430,7 +388,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>現在の量子状態をバッファと交換する </p>
 
 </div>
 </div>
@@ -441,15 +398,11 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>

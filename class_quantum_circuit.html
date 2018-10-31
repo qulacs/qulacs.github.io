@@ -237,10 +237,7 @@ Friends</h2></td></tr>
 <tr class="memitem:ad8ae063538257e5acfb9e3eba3dea1b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit.html#ad8ae063538257e5acfb9e3eba3dea1b7">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> *gate)</td></tr>
 <tr class="separator:ad8ae063538257e5acfb9e3eba3dea1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>量子回路のクラス</p>
-<p>量子回路を管理するクラス。QuantumGateクラスをリストとして持ち、種々の操作を行う。 管理する量子ゲートは量子回路の解放時にすべて解放される。 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a329cbfc3b16bc7bd1d5ed6ee30c50aad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a329cbfc3b16bc7bd1d5ed6ee30c50aad">&#9670;&nbsp;</a></span>QuantumCircuit() <span class="overload">[1/2]</span></h2>
 
@@ -256,14 +253,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>空の量子回路を作成する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_count</td><td>量子ビットの数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>生成された量子回路のインスタンス </dd></dl>
 
 </div>
 </div>
@@ -292,15 +281,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路をQASMから生成する</p>
-<p>QASMのファイルをパスを指定し、QASMに記載されている量子回路を作成する。 QASMのパースのためにqiskitが指定されている必要がある。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">qasm_path</td><td>QASMファイルのパス </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">qasm_loader_script_path</td><td>QASMを読むためのpythonのパス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>生成されたインスタンス。生成でエラーが生じた場合はNULLを返す。 </dd></dl>
 
 </div>
 </div>
@@ -326,7 +306,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>デストラクタ </p>
 
 </div>
 </div>
@@ -364,14 +343,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>CNOT gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">control_index</td><td>作用するcontrol qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -408,14 +379,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Control-Z gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">control_index</td><td>作用するcontrol qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -452,14 +415,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>1-qubitのdenseな行列のゲートを追加する。</p>
-<p>denseな行列はユニタリである必要はなく、射影演算子やクラウス演算子でも良い。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>作用する2*2の行列 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -496,14 +451,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>multi qubitのdenseな行列のゲートを追加する。</p>
-<p>denseな行列はユニタリである必要はなく、射影演算子やクラウス演算子でも良い。 matrixの次元はtarget_index_listのサイズを \(m\)としたとき \(2^m\)でなければいけない。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index_list</td><td>作用するtarget qubitの添え字のリスト </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>作用する行列 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -540,14 +487,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitオブザーバブル回転ゲートを追加する。(対角のみ)</p>
-<p>n-qubitオブザーバブル回転ゲートを作用する。ここで用いるオブザーバブルは、対角である必要がある。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">observable</td><td>追加するオブザーバブル </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -574,13 +513,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子ゲートを回路の末尾に追加する</p>
-<p>量子ゲートを回路に追加する。 追加した量子ゲートは量子回路の解放時に開放される。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gate</td><td>追加する量子ゲート </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -617,14 +549,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子ゲートを回路の指定位置に追加する。</p>
-<p>量子ゲートを回路の指定した位置に追加する。 追加した量子ゲートは量子回路の解放時に開放される。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gate</td><td>追加する量子ゲート </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>追加する位置 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -651,13 +575,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子ゲートを回路の末尾に追加する</p>
-<p>与えられた量子ゲートのコピーを回路に追加する。 add_gateに比べコピーが発生する分低速な一方、引数で与えたゲートを再利用できる。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gate</td><td>追加する量子ゲート </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -694,14 +611,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子ゲートを回路の指定位置に追加する。</p>
-<p>与えらた量子ゲートを回路の指定した位置に追加する。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gate</td><td>追加する量子ゲート </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>追加する位置 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -728,13 +637,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Hadamard gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -771,14 +673,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitパウリゲートを追加する。</p>
-<p>n-qubitパウリゲートを作用する。 パウリ演算子は \((I,X,Y,Z) \mapsto (0,1,2,3)\)と対応している。 例えば、 \(X_3 Y_2 Z_4\)であれば、target_index_list = {3,2,4}, pauli_id_list = {1,2,3}である。 1-qubitパウリゲートとn-qubitパウリゲートの計算コストはほぼ同じため、パウリゲートのテンソル積を作用する場合はパウリゲートとして作用した方が処理が高速になる。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index_list</td><td>作用するtarget qubitの添え字のリスト </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_id_list</td><td>target_index_listに対応したパウリ演算子のid </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -805,13 +699,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitパウリゲートを追加する。</p>
-<p>n-qubitパウリゲートを作用する。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_operator</td><td>追加するパウリ演算子 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -854,15 +741,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitパウリ回転ゲートを追加する。</p>
-<p>n-qubitパウリ回転ゲートを作用する。 パウリ演算子は{I,X,Y,Z} = {0,1,2,3}と対応している。 例えば、 \(\exp(i\theta X_3 Y_2 Z_4)\)であれば、target_index_list = {3,2,4}, pauli_id_list = {1,2,3}, angle = \(\theta\)とする。 1-qubitパウリゲートとn-qubitパウリゲートの計算コストはほぼ同じため、パウリゲートのテンソル積を作用する場合はパウリゲートとして作用した方が処理が高速になる。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index_list</td><td>作用するtarget qubitの添え字のリスト </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_id_list</td><td>target_index_listに対応したパウリ演算子のid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -889,13 +767,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitパウリ回転ゲートを追加する。</p>
-<p>n-qubitパウリ回転ゲートを作用する。 回転角はPauliOperatorの係数を用いる。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_operator</td><td>追加するパウリ演算子 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -938,15 +809,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>n-qubitオブザーバブル回転ゲートを追加する。</p>
-<p>Suzuki-Trotter展開によりn-qubitオブザーバブル回転ゲートを作用する。ここで用いるオブザーバブルは、対角でなくてもよい。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">observable</td><td>追加するオブザーバブル </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \( \theta \) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_repeats</td><td>Trotter展開をする際の分割数 \(N\)。指定しない場合は、関数内部で \( \#qubit \cdot \theta / N = 0.01\) となるように設定される。 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -973,13 +835,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>0状態への射影演算を追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1006,13 +861,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>1状態への射影演算を追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1049,14 +897,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>X-rotation gateを追加する。</p>
-<p>ゲートの表記は \( R_X(\theta) = \exp(i\theta X) \)になっている。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \(\theta\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1093,14 +933,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Y-rotation gateを追加する。</p>
-<p>ゲートの表記は \( R_Y(\theta) = \exp(i\theta Y) \)になっている。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \(\theta\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1137,14 +969,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Z-rotation gateを追加する。</p>
-<p>ゲートの表記は \( R_Z(\theta) = \exp(i\theta Z) \)になっている。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 \(\theta\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1171,13 +995,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(S\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1204,13 +1021,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(S^{\dagger}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1237,13 +1047,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(\sqrt{X}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1270,13 +1073,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(\sqrt{X}^{\dagger}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1303,13 +1099,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(\sqrt{Y}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1336,13 +1125,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(\sqrt{Y}^{\dagger}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1379,14 +1161,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>SWAP gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index1</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index2</td><td>作用するもう一方のtarget qubitの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1413,13 +1187,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(T\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1446,13 +1213,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(T^{\dagger}\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1489,14 +1249,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>OpenQASMのu1 gateを追加する。</p>
-<p>ゲートの表記はIBMQのページを参照。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>回転角 \(\phi\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1539,15 +1291,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>OpenQASMのu2 gateを追加する。</p>
-<p>ゲートの表記はIBMQのページを参照。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>回転角 \(\phi\) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">psi</td><td>回転角 \(\psi\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1596,16 +1339,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>OpenQASMのu3 gateを追加する。</p>
-<p>ゲートの表記はIBMQのページを参照。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用するtarget qubitの添え字 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>回転角 \(\phi\) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">psi</td><td>回転角 \(\psi\) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lambda</td><td>回転角 \(\lambda\) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1632,13 +1365,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(X\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1665,13 +1391,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(Y\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1698,13 +1417,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>\(Z\) gateを追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_index</td><td>作用する量子ビットの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1722,8 +1434,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路のdepthを計算する。</p>
-<p>ここでいうdepthとは、可能な限り量子ゲートを並列実行した時に掛かるステップ数を指す。 </p><dl class="section return"><dt>Returns</dt><dd>量子回路のdepth </dd></dl>
 
 </div>
 </div>
@@ -1741,8 +1451,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路のディープコピーを生成する</p>
-<dl class="section return"><dt>Returns</dt><dd>量子回路のディープコピー </dd></dl>
 
 </div>
 </div>
@@ -1760,14 +1468,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路がCliffordかどうかを判定する。</p>
-<p>全ての量子ゲートがCliffordである場合にtrueと判定される。 Non-Cliffordゲートが複数あり積がCliffordとなっている場合もfalseとして判定される点に注意。 </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">true</td><td>Clifford </td></tr>
-    <tr><td class="paramname">false</td><td>Non-Clifford </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1785,14 +1485,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路がFermionic Gaussianかどうかを判定する。</p>
-<p>全ての量子ゲートがFermionic Gaussianである場合にtrueと判定される。 Non-Cliffordゲートが複数あり、結果としてCliffordとなっている場合もNon-Cliffordとして判定される点に注意。 </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">true</td><td>Fermionic Gaussian </td></tr>
-    <tr><td class="paramname">false</td><td>Non-fermionic Gaussian </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1819,13 +1511,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子回路からゲートを削除する。</p>
-<p>削除した量子ゲートは解放される。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>削除するゲートの位置 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1851,8 +1536,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報の文字列を生成する</p>
-<dl class="section return"><dt>Returns</dt><dd>生成した文字列 </dd></dl>
 
 </div>
 </div>
@@ -1871,13 +1554,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子状態を更新する</p>
-<p>順番にすべての量子ゲートを作用する。量子状態の初期化などは行わない。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">state</td><td>作用する量子状態 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1912,15 +1588,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子回路の指定範囲のみを用いて量子状態をを更新する</p>
-<p>添え字がstart_indexからend_index-1までの量子ゲートを順番に量子ゲートを作用する。量子状態の初期化などは行わない。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">state</td><td>作用する量子状態 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">start_index</td><td>開始位置 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">end_index</td><td>修了位置 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1958,8 +1625,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -1996,8 +1661,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -2013,7 +1676,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子ゲートのリスト </p>
 
 </div>
 </div>
@@ -2028,7 +1690,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子ビットの数 </p>
 
 </div>
 </div>
@@ -2039,15 +1700,11 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>

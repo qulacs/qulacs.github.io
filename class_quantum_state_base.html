@@ -210,9 +210,7 @@ Friends</h2></td></tr>
 <tr class="memitem:aa56d9b439bedbbbb7cb4500373e9df04"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#aa56d9b439bedbbbb7cb4500373e9df04">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state)</td></tr>
 <tr class="separator:aa56d9b439bedbbbb7cb4500373e9df04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>量子状態の基底クラス </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6317f908001e53eae725dc43df4a7d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6317f908001e53eae725dc43df4a7d0">&#9670;&nbsp;</a></span>QuantumStateBase()</h2>
 
@@ -236,13 +234,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>コンストラクタ</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qubit_count_</td><td>量子ビット数 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -268,7 +259,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>デストラクタ </p>
 
 </div>
 </div>
@@ -295,8 +285,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>バッファとして同じサイズの量子状態を作成する。</p>
-<dl class="section return"><dt>Returns</dt><dd>生成された量子状態 </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9">QuantumStateCpu</a>.</p>
 
@@ -324,8 +312,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>自身の状態のディープコピーを生成する</p>
-<dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae493e084275b1bffc6c1839004806a26">QuantumStateCpu</a>.</p>
 
@@ -353,8 +339,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態をcsimのComplex型の配列として取得する</p>
-<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a509c7fcb84630a35833846ec9023ff50">QuantumStateCpu</a>.</p>
 
@@ -382,8 +366,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態をC++の<code>std::complex&lt;double&gt;</code>の配列として取得する</p>
-<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a4e0b15078856b9eaef1b2a3d2f5297ff">QuantumStateCpu</a>.</p>
 
@@ -411,8 +393,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>古典レジスタのベクトルを返す</p>
-<dl class="section return"><dt>Returns</dt><dd>古典レジスタ </dd></dl>
 
 </div>
 </div>
@@ -439,14 +419,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>指定した添え字の古典レジスタの値を取得する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>セットするレジスタの添え字 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
 </div>
 </div>
@@ -472,7 +444,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態が配置されているメモリを保持するデバイス名を取得する。 </p>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a8e28f4601cae065130f4f419236e3915">QuantumStateCpu</a>.</p>
 
@@ -500,8 +471,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>計算基底で測定した時得られる確率分布のエントロピーを計算する。</p>
-<dl class="section return"><dt>Returns</dt><dd>エントロピー </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a7e73429ab76cb78dc607ad98af091e01">QuantumStateCpu</a>.</p>
 
@@ -530,14 +499,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>複数の量子ビットを測定した時の周辺確率を計算する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">measured_values</td><td>量子ビット数と同じ長さの0,1,2の配列。0,1はその値が観測され、2は測定をしないことを表す。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>計算された周辺確率 </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a942a5988e0154006b69ca940c5398754">QuantumStateCpu</a>.</p>
 
@@ -565,8 +526,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態のノルムを計算する</p>
-<p>量子状態のノルムは非ユニタリなゲートを作用した時に小さくなる。 </p><dl class="section return"><dt>Returns</dt><dd>ノルム </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acd318e718f4bd27b09389056f0c0359c">QuantumStateCpu</a>.</p>
 
@@ -595,14 +554,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><code>target_qubit_index</code>の添え字の量子ビットを測定した時、0が観測される確率を計算する。</p>
-<p>量子状態は変更しない。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target_qubit_index</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a736a84d755d9974e79c5d5f1168b568d">QuantumStateCpu</a>.</p>
 
@@ -631,7 +582,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><code>state</code>の量子状態を自身へコピーする。 </p>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a282753bcf9cfd1ebbd3a1ca88c657f17">QuantumStateCpu</a>.</p>
 
@@ -660,13 +610,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態を正規化する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">norm</td><td>自身のノルム </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a59b57ed1bd51ca0f578784cbfc67da2c">QuantumStateCpu</a>.</p>
 
@@ -695,14 +638,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態を測定した際の計算基底のサンプリングを行う</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sampling_count</td><td>サンプリングを行う回数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>サンプルされた値のリスト </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a728eb8a61c1bfecf94bf8d6e961413ac">QuantumStateCpu</a>.</p>
 
@@ -741,15 +676,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>指定した添え字の古典レジスタに値をセットする</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>セットするレジスタの添え字 </td></tr>
-    <tr><td class="paramname">val</td><td>セットする値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
 </div>
 </div>
@@ -776,13 +702,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態を<code>comp_basis</code>の基底状態に初期化する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comp_basis</td><td>初期化する基底を表す整数 </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae47f17686cf8c69e3289fa91df333d47">QuantumStateCpu</a>.</p>
 
@@ -810,7 +729,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態をHaar randomにサンプリングされた量子状態に初期化する </p>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a0cc55e1a4b216f76d671fe066467e46f">QuantumStateCpu</a>.</p>
 
@@ -839,7 +757,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態をシードを用いてHaar randomにサンプリングされた量子状態に初期化する </p>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aba7842f04163f1f25f1f2c24c1af210b">QuantumStateCpu</a>.</p>
 
@@ -867,7 +784,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態を計算基底の0状態に初期化する </p>
 
 <p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aeade6e10bcd8a649b4e00e47ad3a93f5">QuantumStateCpu</a>.</p>
 
@@ -895,8 +811,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子回路のデバッグ情報の文字列を生成する</p>
-<dl class="section return"><dt>Returns</dt><dd>生成した文字列 </dd></dl>
 
 </div>
 </div>
@@ -934,8 +848,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -972,8 +884,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>量子状態のデバッグ情報を出力する。</p>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -1055,7 +965,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>古典ビットのレジスタ </p>
 
 </div>
 </div>
@@ -1070,7 +979,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子状態の次元 </p>
 
 </div>
 </div>
@@ -1085,7 +993,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>量子ビット数 </p>
 
 </div>
 </div>
@@ -1095,15 +1002,11 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>

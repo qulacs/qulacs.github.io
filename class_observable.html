@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <title>Qulacs: Observable Struct Reference</title>
+        <title>Qulacs: Observable Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_observable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Observable Struct Reference</div>  </div>
+<div class="title">Observable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -151,9 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca9ac94ce48cbb211effe86c9de73e74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#aca9ac94ce48cbb211effe86c9de73e74">get_transition_amplitude</a> (const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state_bra, const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state_ket) const</td></tr>
 <tr class="separator:aca9ac94ce48cbb211effe86c9de73e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>オブザーバブルの情報を保持するクラス。 PauliOperatorをリストとして持ち, 種々の操作を行う。解放時には保持しているPauliOperatorを全て解放する。 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aca2167db7662a2302a73aafd8a9ebd0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca2167db7662a2302a73aafd8a9ebd0e">&#9670;&nbsp;</a></span>Observable()</h2>
 
@@ -169,14 +167,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>コンストラクタ。</p>
-<p>空のオブザーバブルを作成する。 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_count</td><td>qubit数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Observableのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -202,7 +192,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>デストラクタ。このとき、オブザーバブルが保持しているPauliOperatorは解放される。 </p>
 
 </div>
 </div>
@@ -222,13 +211,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>PauliOperatorを内部で保持するリストの末尾に追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mpt</td><td>追加するPauliOperatorのインスタンス </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -257,14 +239,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>パウリ演算子の文字列と係数の組をオブザーバブルに追加する。</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coef</td><td>pauli_stringで作られるPauliOperatorの係数 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_string</td><td>パウリ演算子と掛かるindexの組からなる文字列。(example: "X 1 Y 2 Z 5") </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -283,14 +257,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>オブザーバブルのある量子状態に対応するエネルギー(期待値)を計算して返す</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>期待値をとるときの量子状態 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>入力で与えた量子状態に対応するオブザーバブルの期待値 </dd></dl>
 
 </div>
 </div>
@@ -316,7 +282,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>オブザーバブルが掛かるqubit数を返す。 </p><dl class="section return"><dt>Returns</dt><dd>オブザーバブルのqubit数 </dd></dl>
 
 </div>
 </div>
@@ -342,7 +307,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>オブザーバブルの行列表現の次元を返す。 </p><dl class="section return"><dt>Returns</dt><dd>オブザーバブルの次元 </dd></dl>
 
 </div>
 </div>
@@ -369,13 +333,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>オブザーバブルの指定した添字に対応するPauliOperatorを返す </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>オブザーバブルが保持するPauliOperatorのリストの添字 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>指定したindexにあるPauliOperator </dd></dl>
 
 </div>
 </div>
@@ -401,7 +358,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>オブザーバブルが保持するPauliOperatorの数を返す </p><dl class="section return"><dt>Returns</dt><dd>オブザーバブルが保持するPauliOperatorの数 </dd></dl>
 
 </div>
 </div>
@@ -427,7 +383,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>オブザーバブルが保持するPauliOperatorのリストを返す </p><dl class="section return"><dt>Returns</dt><dd>オブザーバブルが持つPauliOperatorのリスト </dd></dl>
 
 </div>
 </div>
@@ -456,34 +411,21 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>オブザーバブルによってある状態が別の状態に移る遷移振幅を計算して返す</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">state_bra</td><td>遷移先の量子状態 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state_ket</td><td>遷移前の量子状態 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>入力で与えた量子状態に対応するオブザーバブルの遷移振幅 </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/tenninyan/Soft/qunasys/qulacs/src/cppsim/<a class="el" href="observable_8hpp_source.html">observable.hpp</a></li>
 <li>/Users/tenninyan/Soft/qunasys/qulacs/src/cppsim/<a class="el" href="observable_8cpp.html">observable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer">
+<div class="container">
 Supported by <a href="http://www.qunasys.com">
 <img class="footer" width="100px" src="http://35.200.100.18/wp-content/uploads/2018/04/QunaSys_logo_ver4_rgb-03.png" alt="doxygen"/>
-</a>
+</a></div>
 </address>
 </body>
 </html>
