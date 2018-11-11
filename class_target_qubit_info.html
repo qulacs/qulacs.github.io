@@ -169,7 +169,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a338a8dcfe17eafb32c1c574e7bb74581 inherit pro_attribs_class_qubit_info"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qubit_info.html#a338a8dcfe17eafb32c1c574e7bb74581">_index</a></td></tr>
 <tr class="separator:a338a8dcfe17eafb32c1c574e7bb74581 inherit pro_attribs_class_qubit_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>ターゲット量子ビットの情報を保持するクラス </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3882c3dadbd3a5919f251ed21c563163"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3882c3dadbd3a5919f251ed21c563163">&#9670;&nbsp;</a></span>TargetQubitInfo() <span class="overload">[1/2]</span></h2>
 
@@ -193,6 +195,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コンストラクタ</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index_</td><td>この量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -229,6 +238,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コンストラクタ</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index_</td><td>この量子ビットの添え字 </td></tr>
+    <tr><td class="paramname">commutation_property_</td><td>この量子ビットのパウリとの交換関係 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -256,6 +273,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>与えられた<code>property</code>の値のパウリとの交換関係と自身をマージした時、得られるパウリ演算子との可換関係のプロパティ値を返す。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td>マージするプロパティ値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>マージされたプロパティ値 </dd></dl>
 
 </div>
 </div>
@@ -282,6 +307,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>与えられた<code>target</code>の量子ビットの情報のパウリとの交換関係と自身をマージした時、得られるパウリ演算子との可換関係のプロパティ値を返す。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>マージする量子ビット情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>マージされたプロパティ値 </dd></dl>
 
 </div>
 </div>
@@ -308,6 +341,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>与えられた<code>control</code>の量子ビットの情報のパウリとの交換関係と自身をマージした時、得られるパウリ演算子との可換関係のプロパティ値を返す。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control</td><td>マージする量子ビット情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>マージされたプロパティ値 </dd></dl>
 
 </div>
 </div>
@@ -334,6 +375,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>ターゲット量子ビットの情報<code>info</code>と可換かどうかを調べる</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>可換かどうかを調べる量子ビットの情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 可換ではない </dd></dl>
 
 </div>
 </div>
@@ -360,6 +411,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コントロール量子ビットの情報<code>info</code>と可換かどうかを調べる</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>可換かどうかを調べる量子ビットの情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 可換ではない </dd></dl>
 
 </div>
 </div>
@@ -385,6 +446,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Xパウリと可換かを調べる</p>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 非可換である </dd></dl>
 
 </div>
 </div>
@@ -410,6 +475,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Yパウリと可換かを調べる</p>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 非可換である </dd></dl>
 
 </div>
 </div>
@@ -435,6 +504,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Zパウリと可換かを調べる</p>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 非可換である </dd></dl>
 
 </div>
 </div>

@@ -112,45 +112,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">How to install </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>環境について</h2>
-<p>下記の環境での動作を確認しています。</p>
+<div class="textblock"><h2>Install from Source</h2>
+<p>If you encounter some troubles, see <a href="http://qulacs.org/md_4__trouble_shooting.html">troubleshooting</a>.</p>
+<h3>Requirements</h3>
 <ul>
-<li>gcc-7 @ Ubuntu</li>
-<li>gcc-7 @ MacOS</li>
-<li>gcc-7 @ Windows-msys2-MINGW64</li>
-<li>gcc-7 @ Windows-cygwin64</li>
-<li>MSVC 15.0 Win64 @ Windows</li>
+<li>python 2.7 or 3.x</li>
+<li>gcc/g++ &gt;= 7.0.0 or VisualStudio 2017</li>
+<li>cmake &gt;= 2.8</li>
+<li>git</li>
 </ul>
-<h2>インストール</h2>
-<h3>必要なファイルのインストール</h3>
-<h4>Linux</h4>
-<p>gcc-7, g++-7, make, git, wget, cmake, python3が必要になります。 python3には、numpyをインストールしてください。</p>
-<h4>Mac OS</h4>
-<p>gcc-7, g++-7, make, git, wget, cmake, python3が必要になります。 Macのデフォルトのgccとg++はclangとなっているので、別途gccを導入してください。 python3には、numpyをインストールしてください。</p>
-<h4>Windows</h4>
-<p>msys2やcygwinを用いる場合、gcc, g++, make, git, wget, cmake, python3をインストールしてください。python3には、numpyをインストールしてください。</p>
-<p>Visual Studioを用いる場合、Visual Studio 2017以降と、git, cmake, python3をインストールしてください。Visual Studioとpython3の連携はAnaconda3での動作を確認しています。</p>
-<h3>gccでのビルド</h3>
-<h4>ライブラリのビルド</h4>
-<p>作業ディレクトリに移動し、以下のコマンドを実行してください。 </p><div class="fragment"><div class="line">git clone https://github.com/vqcsim/vqcsim.git</div><div class="line">cd vqcsim</div><div class="line">./get_eigen.sh</div><div class="line">./get_gtest.sh</div><div class="line">./get_pybind.sh</div><div class="line">mkdir build</div><div class="line">cd build</div><div class="line">cmake -G &quot;Unix Makefiles&quot; -D CMAKE_BUILD_TYPE=Release -D CMAKE_C_COMPILER=gcc -D CMAKE_CXX_COMPILER=g++ ..</div></div><!-- fragment --><p>gcc/g++が古かったり、MacOSでバックエンドがclangである場合は、上記のcmakeコマンドのgcc/g++をgcc-7,g++-7に置き換えてください。</p>
-<p>並列化を無効にしたい場合はcmakeのフラグに"-D USE_OMP=no"を加えてください。</p>
-<p>cmakeが完了したら、下記のコマンドでライブラリをビルドします。 </p><div class="fragment"><div class="line">make</div></div><!-- fragment --><h4>ライブラリのテスト</h4>
-<p>下記のコマンドでgoogle testが実行されます。 </p><div class="fragment"><div class="line">make test</div></div><!-- fragment --><h4>ライブラリのベンチマーク</h4>
-<p>下記のコマンドで簡易的なベンチマークが実行されます。 </p><div class="fragment"><div class="line">make bench</div></div><!-- fragment --><h4>pythonライブラリの生成</h4>
-<p>下記のコマンドでpythonのライブラリが生成されます。 </p><div class="fragment"><div class="line">make python</div></div><!-- fragment --><p> エラーが生じてしまう場合はドキュメントのトラブルシューティングを参照してください。</p>
-<h4>pythonライブラリのテスト</h4>
-<p>下記のコマンドでpythonのライブラリのテストが実行されます。 </p><div class="fragment"><div class="line">make pythonpython</div></div><!-- fragment --><h3>Visual Studioでのビルド</h3>
-<h4>プロジェクトファイルの作成</h4>
-<p>作業ディレクトリに移動し、以下のコマンドを実行してください。 </p><div class="fragment"><div class="line">git clone https://github.com/vqcsim/vqcsim.git</div><div class="line">cd vqcsim</div><div class="line">./get_eigen.sh</div><div class="line">./get_gtest.sh</div><div class="line">./get_pybind.sh</div><div class="line">mkdir build</div><div class="line">cd build</div><div class="line">cmake -G &quot;Visual Studio 15 2017 Win64&quot; -D CMAKE_BUILD_TYPE=Release ..</div></div><!-- fragment --><p> 上記コマンドで、Project.slnが生成されるので、これを開いてください。</p>
-<p>次に、上部ボックスでReleaseを選択し、メニューの「ビルド」からリビルドを選択します。</p>
-<h3>使い方</h3>
-<h4>C++ライブラリの利用</h4>
-<p>例えばcppsimを用いるとき、 </p><div class="fragment"><div class="line">g++ -I ./vqcsim/include -I ./vqcsim/eigen_3_3_5 your_code.cpp ./vqcsim/lib/libcppsim.a</div></div><!-- fragment --><p> としてビルドできます。(Windowsの場合は拡張子は.aではなく.libです。) 関数のリストや実装例についてはドキュメントを参照してください。</p>
-<h3>pythonライブラリの利用</h3>
-<p>pybind11を用いてcppsimがpython用のライブラリとして出力されています。</p>
-<p>環境に応じて、拡張子が.dllか.pydのpycppsimライブラリが、binフォルダかlibフォルダに生成されます。 このdllをpythonスクリプトから参照できる位置に配置することで、以下のようにpythonから呼び出せます。 </p><div class="fragment"><div class="line">from pycppsim import Hamiltonian, QuantumCircuit, QuantumState</div><div class="line">from pycppsim.gate import Y,CNOT,merge</div><div class="line"></div><div class="line">state = QuantumState(3)</div><div class="line">state.set_Haar_random_state()</div><div class="line"></div><div class="line">circuit = QuantumCircuit(3)</div><div class="line">circuit.add_X_gate(0)</div><div class="line">merged_gate = merge(CNOT(0,1),Y(1))</div><div class="line">circuit.append_gate(merged_gate)</div><div class="line">circuit.add_RX_gate(1,0.5)</div><div class="line">circuit.update_quantum_state(state)</div><div class="line"></div><div class="line">ham = Hamiltonian(3)</div><div class="line">ham.add_operator(2.0, &quot;X 2 Y 1 Z 0&quot;)</div><div class="line">ham.add_operator(-3.0, &quot;Z 2&quot;)</div><div class="line">value = ham.get_expectation_value(state)</div><div class="line">print(value)</div></div><!-- fragment --><p> <b>pycppsimはpython3の関連ファイルでビルドされているので、pythonがpython3のエイリアスになっていない場合、必ずpython3からimportしてください。</b></p>
-<p>関数やクラスのリストは一部移植されていない関数を除き、cppsimと同じです。 実装例についてはドキュメントを参照してください。 </p>
-</div></div><!-- contents -->
+<h3>C++ Library(cppsim)</h3>
+<p>#### GCC </p><div class="fragment"><div class="line">git clone https://github.com/qulacs/qulacs.git</div><div class="line">cd qulacs</div><div class="line">./build_gcc.sh</div></div><!-- fragment --><p>#### MSVC </p><div class="fragment"><div class="line">git clone https://github.com/qulacs/qulacs.git</div><div class="line">cd qulacs</div><div class="line">generate_msvc_project.bat</div></div><!-- fragment --><p> Then, open <code>Project.sln</code> in <code>./qulacs/visualstudio/</code>, and build all.</p>
+<h3>Python Interface(Qulacs)</h3>
+<p>Install </p><div class="fragment"><div class="line">git clone https://github.com/qulacs/qulacs.git</div><div class="line">cd qulacs</div><div class="line">python setup.py install</div></div><!-- fragment --><p>Uninstall </p><div class="fragment"><div class="line">pip uninstall qulacs</div></div><!-- fragment --><h2>Gettig started</h2>
+<p>See the following document for more detail. <br />
+<a href="http://qulacs.org/md_2__tutorial__c_p_p.html">C++ Tutorial</a> <br />
+<a href="http://qulacs.org/md_3__tutorial_python.html">Python Tutorial</a> <br />
+<a href="https://github.com/qulacs/quantum-circuits">Examples</a> <br />
+<a href="http://qulacs.org/annotated.html">API document</a> <br />
+ </p><h3>C++ Libraries</h3>
+<p>Add <code>./&lt;qulacs_path&gt;/include/</code> to include path, and <code>./&lt;qulacs_path&gt;/lib/</code> to library path. If you use dynamic link library, add <code>./&lt;qulacs_path&gt;/bin/</code> to library path instead.</p>
+<p>Example of C++ code: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="state_8hpp.html">cppsim/state.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="circuit_8hpp.html">cppsim/circuit.hpp</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="observable_8hpp.html">cppsim/observable.hpp</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(){</div><div class="line">    <a class="code" href="class_quantum_state_cpu.html">QuantumState</a> <a class="code" href="namespacestate.html">state</a>(3);</div><div class="line">    <a class="code" href="namespacestate.html">state</a>.set_Haar_random_state();</div><div class="line"></div><div class="line">    <a class="code" href="class_quantum_circuit.html">QuantumCircuit</a> circuit(3);</div><div class="line">    circuit.add_X_gate(0);</div><div class="line">    <span class="keyword">auto</span> merged_gate = <a class="code" href="namespacegate.html#a94d884492ddbcd3ac18645cffa2063bd">gate::merge</a>(<a class="code" href="namespacegate.html#a649dd5f71322068186bdf940014f2a7c">gate::CNOT</a>(0,1),<a class="code" href="namespacegate.html#a0c5810c498693275b9143b8a28c07ee5">gate::Y</a>(1));</div><div class="line">    circuit.add_gate(merged_gate);</div><div class="line">    circuit.add_RX_gate(1,0.5);</div><div class="line">    circuit.update_quantum_state(&amp;<a class="code" href="namespacestate.html">state</a>);</div><div class="line"></div><div class="line">    <a class="code" href="class_observable.html">Observable</a> <a class="code" href="namespaceobservable.html">observable</a>(3);</div><div class="line">    <a class="code" href="namespaceobservable.html">observable</a>.add_operator(2.0, <span class="stringliteral">&quot;X 2 Y 1 Z 0&quot;</span>);</div><div class="line">    <a class="code" href="namespaceobservable.html">observable</a>.add_operator(-3.0, <span class="stringliteral">&quot;Z 2&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> value = <a class="code" href="namespaceobservable.html">observable</a>.get_expectation_value(&amp;<a class="code" href="namespacestate.html">state</a>);</div><div class="line">    std::cout &lt;&lt; value &lt;&lt; std::endl;</div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>Example of build command: </p><div class="fragment"><div class="line">g++ -I ./&lt;qulacs_path&gt;/include -L ./&lt;qulacs_path&gt;/lib &lt;your_code&gt;.cpp -lcppsim.so</div></div><!-- fragment --><h3>Python Libraries</h3>
+<p>You can use features by simply importing <code>qulacs</code>.</p>
+<p>Example of python code: </p><div class="fragment"><div class="line">from qulacs import Observable, QuantumCircuit, QuantumState</div><div class="line">from qulacs.gate import Y,CNOT,merge</div><div class="line"></div><div class="line">state = QuantumState(3)</div><div class="line">state.set_Haar_random_state()</div><div class="line"></div><div class="line">circuit = QuantumCircuit(3)</div><div class="line">circuit.add_X_gate(0)</div><div class="line">merged_gate = merge(CNOT(0,1),Y(1))</div><div class="line">circuit.add_gate(merged_gate)</div><div class="line">circuit.add_RX_gate(1,0.5)</div><div class="line">circuit.update_quantum_state(state)</div><div class="line"></div><div class="line">observable = Observable(3)</div><div class="line">observable.add_operator(2.0, &quot;X 2 Y 1 Z 0&quot;)</div><div class="line">observable.add_operator(-3.0, &quot;Z 2&quot;)</div><div class="line">value = observable.get_expectation_value(state)</div><div class="line">print(value)</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer">

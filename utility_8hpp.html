@@ -151,7 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abd1d1b3d73be20911924977c5987a5a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8hpp.html#abd1d1b3d73be20911924977c5987a5a5">chfmt</a> (std::string &amp;ops)</td></tr>
 <tr class="separator:abd1d1b3d73be20911924977c5987a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>ユーティリティの関数やクラス </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="abd1d1b3d73be20911924977c5987a5a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd1d1b3d73be20911924977c5987a5a5">&#9670;&nbsp;</a></span>chfmt()</h2>
 
@@ -167,6 +169,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>引数にとった文字列を、PauliOperatorで渡すことができる形に整形します。この関数は第一引数に与えた文字列に破壊的な変更を加えます。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ops</td><td>演算子と添字が隣り合った文字列。(example: "X12 Y13 Z5" に対して, "X 12 Y 13 Z 5"のように変更を加えます。) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -193,6 +202,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>1になっているビットの数を数える</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>1になっているビットの数を数える整数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1になっているビットの数 </dd></dl>
 
 </div>
 </div>
@@ -221,6 +238,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><code>pauli_id_list</code>からパウリ行列を<code>matrix</code>生成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>作成する行列を格納する行列の参照 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pauli_id_list</td><td>生成するパウリ演算子のIDのリスト。 \({I,X,Y,Z}\)が \({0,1,2,3}\)に対応する。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -249,6 +274,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>第一引数の文字列を第二引数の文字列で区切ったリストを返します。この関数は第一引数に対して非破壊です。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>分割したい文字列。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delim</td><td>区切り文字列。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>第一引数に含まれる区切り文字列で区切った文字列。(example: split("aabcaaca", "bc") -&gt; {"aa", "aa", "a"} </dd></dl>
 
 </div>
 </div>

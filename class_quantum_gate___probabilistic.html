@@ -207,7 +207,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a822cf64f142b08c37b7d621690e31b71 inherit pro_methods_class_quantum_gate_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a822cf64f142b08c37b7d621690e31b71">operator=</a> (const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> &amp;rhs)=default</td></tr>
 <tr class="separator:a822cf64f142b08c37b7d621690e31b71 inherit pro_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>確率的なユニタリ操作 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe1aa776cc16998849358a80100f8401"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe1aa776cc16998849358a80100f8401">&#9670;&nbsp;</a></span>QuantumGate_Probabilistic()</h2>
 
@@ -241,6 +243,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コンストラクタ</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distribution</td><td>ゲートが現れる確率 </td></tr>
+    <tr><td class="paramname">gate_list</td><td>ゲートのリスト </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -267,6 +277,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のディープコピーを生成する</p>
+<dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#a5af599d13f1ed0001d088cde01e0b274">QuantumGateBase</a>.</p>
 
@@ -295,6 +307,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のゲート行列をセットする</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>行列をセットする変数の参照 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#af2e07a9ea2a8bf5f4c405838d9deb6fe">QuantumGateBase</a>.</p>
 
@@ -323,6 +342,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子状態を更新する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>更新する量子状態 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#acb5d75397ef1ed4ce1236b821c451d22">QuantumGateBase</a>.</p>
 

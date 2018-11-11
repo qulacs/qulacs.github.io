@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <title>Qulacs: /Users/tenninyan/Soft/qunasys/qulacs/src/cppsim/gate_matrix.cpp File Reference</title>
+        <title>Qulacs: 0_About_Qulacs.md File Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -112,108 +112,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e04a1e360dcd38d653639da9f7b0221b.html">cppsim</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">gate_matrix.cpp File Reference</div>  </div>
+<div class="title">0_About_Qulacs.md File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;csim/update_ops.h&gt;</code><br />
-<code>#include &lt;csim/utility.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="state_8hpp_source.html">state.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gate__matrix_8hpp_source.html">gate_matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="type_8hpp_source.html">type.hpp</a>&quot;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a45f1129aeae04013c7ef687bcfe7262e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gate__matrix_8cpp.html#a45f1129aeae04013c7ef687bcfe7262e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> &amp;gate)</td></tr>
-<tr class="separator:a45f1129aeae04013c7ef687bcfe7262e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71326a09591ad4d7051fce162a399683"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gate__matrix_8cpp.html#a71326a09591ad4d7051fce162a399683">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> *gate)</td></tr>
-<tr class="separator:a71326a09591ad4d7051fce162a399683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a45f1129aeae04013c7ef687bcfe7262e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45f1129aeae04013c7ef687bcfe7262e">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>gate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ゲートの情報を文字列で出力する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">os</td><td>出力するストリーム </td></tr>
-    <tr><td class="paramname">gate</td><td>情報の出力を行うゲート </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
-
-</div>
-</div>
-<a id="a71326a09591ad4d7051fce162a399683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71326a09591ad4d7051fce162a399683">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> *&#160;</td>
-          <td class="paramname"><em>gate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ゲートの情報を文字列で出力する</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">os</td><td>出力するストリーム </td></tr>
-    <tr><td class="paramname">gate</td><td>情報の出力を行うゲート </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
