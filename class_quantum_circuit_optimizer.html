@@ -137,7 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b04d9d9ca8beae6439c1c1074cd7254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_circuit_optimizer.html#a8b04d9d9ca8beae6439c1c1074cd7254">merge_all</a> (const <a class="el" href="class_quantum_circuit.html">QuantumCircuit</a> *circuit)</td></tr>
 <tr class="separator:a8b04d9d9ca8beae6439c1c1074cd7254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>量子回路の圧縮を行うクラス</p>
+<p>量子回路の圧縮を行う。 与えらえた量子回路を適切なサイズまで圧縮したり、まとめたゲートに変換するなどの処理を行う。 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a25fdeded719a78022bc3bb218e2d5adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25fdeded719a78022bc3bb218e2d5adf">&#9670;&nbsp;</a></span>QuantumCircuitOptimizer()</h2>
 
@@ -160,6 +163,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コンストラクタ </p>
 
 </div>
 </div>
@@ -185,6 +189,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -204,6 +209,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>量子回路を纏めて一つの巨大な量子ゲートにする</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">circuit</td><td>量子回路のインスタンス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>変換された量子ゲート </dd></dl>
 
 </div>
 </div>
@@ -232,6 +245,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>与えられた量子回路のゲートを指定されたブロックまで纏める。</p>
+<p>与えられた量子回路において、若い添え字から任意の二つのゲートを選び、二つが他のゲートに影響を与えず合成可能なら合成を行う。 これを合成可能なペアがなくなるまで繰り返す。 二つのゲートが合成可能であるとは、二つのゲートそれぞれについて隣接するゲートとの交換を繰り返し、二つのゲートが隣接した位置まで移動できることを指す。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">circuit</td><td>量子回路のインスタンス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_block_size</td><td>合成後に許されるブロックの最大サイズ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

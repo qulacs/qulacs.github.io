@@ -205,7 +205,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a822cf64f142b08c37b7d621690e31b71 inherit pro_methods_class_quantum_gate_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a822cf64f142b08c37b7d621690e31b71">operator=</a> (const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> &amp;rhs)=default</td></tr>
 <tr class="separator:a822cf64f142b08c37b7d621690e31b71 inherit pro_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>複数の量子ビットに作用するPauli演算子で回転するゲート </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6996b7b3a5218b3560d9e4c0690c22ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6996b7b3a5218b3560d9e4c0690c22ad">&#9670;&nbsp;</a></span>ClsPauliRotationGate()</h2>
 
@@ -239,6 +241,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コンストラクタ</p>
+<p>使用したパウリ演算子はクラスにて解放される </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>回転角 </td></tr>
+    <tr><td class="paramname">pauli</td><td>作用させるパウリ演算子 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -264,6 +274,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -290,6 +301,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のディープコピーを生成する</p>
+<dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#a5af599d13f1ed0001d088cde01e0b274">QuantumGateBase</a>.</p>
 
@@ -318,6 +331,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のゲート行列をセットする</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>行列をセットする変数の参照 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#af2e07a9ea2a8bf5f4c405838d9deb6fe">QuantumGateBase</a>.</p>
 
@@ -346,6 +366,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子状態を更新する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>更新する量子状態 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_quantum_gate_base.html#acb5d75397ef1ed4ce1236b821c451d22">QuantumGateBase</a>.</p>
 

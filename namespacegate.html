@@ -241,6 +241,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>適応操作のゲートを作成する</p>
+<p><code>func</code>が<code>true</code>を返すときのみ<code>gate</code>を作用する量子ゲートを作成する。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate</td><td>ゲート </td></tr>
+    <tr><td class="paramname">func</td><td><code>std::vector&lt;unsigned int&gt;&amp;</code>を受け取り、<code>bool</code>を返す関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Adaptive gate </dd></dl>
 
 </div>
 </div>
@@ -253,12 +262,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> * gate::add </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * &gt;&#160;</td>
           <td class="paramname"><em>gate_list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>複数のゲートを足して新たなゲートを作成する。</p>
+<p>TODO: control-qubitがあるときの挙動が未定義 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate_list</td><td>足すゲート列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>足したゲート </dd></dl>
 
 </div>
 </div>
@@ -272,13 +289,13 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> * gate::add </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&#160;</td>
-          <td class="paramname"><em>gate_first</em>, </td>
+          <td class="paramname"><em>gate1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&#160;</td>
-          <td class="paramname"><em>gate_second</em>&#160;</td>
+          <td class="paramname"><em>gate2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -287,6 +304,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>二つのゲートのゲート行列を足して新たなゲートを作成する。</p>
+<p>TODO: control-qubitがあるときの挙動が未定義 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate1</td><td>先に状態に作用するゲート </td></tr>
+    <tr><td class="paramname">gate2</td><td>後に状態に作用するゲート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>二つのゲートを足したゲート </dd></dl>
 
 </div>
 </div>
@@ -352,6 +378,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>CNOTゲートを作成する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">control_qubit_index</td><td>コントロールとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -364,12 +399,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * gate::CPTP </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * &gt;&#160;</td>
           <td class="paramname"><em>gate_list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>CPTP-mapを作成する</p>
+<p>\(p_i = {\rm Tr}[K_i \rho K_i^{\dagger}]\)を計算し、 \(\{p_i\}\)の確率分布でクラウス演算子を採用して、 \(\sqrt{p_i}^{-1}\)で正規化する。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate_list</td><td>クラウス演算を行うゲートのリスト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CPTP-map </dd></dl>
 
 </div>
 </div>
@@ -388,6 +431,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>量子ゲートを文字列から生成する。</p>
+<p>ゲートを生成するための文字列は以下の通り Identity : I &lt;index&gt; X : X &lt;index&gt; Y : Y &lt;index&gt; Z : Z &lt;index&gt; H : H &lt;index&gt; S : S &lt;index&gt; Sdag : Sdag &lt;index&gt; T : T &lt;index&gt; Tdag : Tdag &lt;index&gt; CNOT,CX : CNOT &lt;control&gt; &lt;target&gt;, or CX &lt;control&gt; &lt;target&gt; CZ : CZ &lt;control&gt; &lt;target&gt; SWAP : SWAP &lt;target1&gt; &lt;target2&gt; U1 : U1 &lt;index&gt; &lt;angle1&gt; U2 : U2 &lt;index&gt; &lt;angle1&gt; &lt;angle2&gt; U3 : U3 &lt;index&gt; &lt;angle1&gt; &lt;angle2&gt; &lt;angle3&gt; Rot X : RX &lt;index&gt; &lt;angle1&gt; Rot Y : RY &lt;index&gt; &lt;angle1&gt; Rot Z : RZ &lt;index&gt; &lt;angle1&gt; DifRot X : RDX &lt;index&gt; DifRot Y : RDY &lt;index&gt; DifRot Z : RDZ &lt;index&gt; MultiRot : RM &lt;paulistr&gt; &lt;index1&gt; &lt;index2&gt; ... &lt;theta&gt; (for example: "RM XYZ 2 3 1 0.123") DifMultiRot : RDM &lt;paulistr&gt; &lt;index1&gt; &lt;index2&gt; ... (for example: "RDM XYZ 2 3 1") general U : U &lt;index_count&gt; &lt;index1&gt; &lt;index2&gt; ... &lt;element1_real&gt; &lt;element1_imag&gt; &lt;element2_real&gt; ... </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gate_string</td><td>ゲートを生成する文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -416,6 +467,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>CZゲートを作成する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">control_qubit_index</td><td>コントロールとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -616,6 +676,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Hadamardゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -634,6 +702,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Identityゲートを作成する。</p>
+<p>作用しても状態は変わらないが、ノイズなどが付与された際の挙動が異なる。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -683,7 +759,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * gate::Instrument </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * &gt;&#160;</td>
           <td class="paramname"><em>gate_list</em>, </td>
         </tr>
         <tr>
@@ -699,6 +775,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Instrumentを作成する</p>
+<p>InstrumentではCPTP-mapを作用させ、かつ作用されたクラウス演算子の添え字を<code>classical_register_address</code>に書き込む。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate_list</td><td>クラウス演算を行うゲートのリスト </td></tr>
+    <tr><td class="paramname">classical_register_address</td><td>添え字を書きこむclassical registerの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Instrument </dd></dl>
 
 </div>
 </div>
@@ -749,13 +834,13 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> * gate::merge </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&#160;</td>
-          <td class="paramname"><em>gate_first</em>, </td>
+          <td class="paramname"><em>gate_applied_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&#160;</td>
-          <td class="paramname"><em>gate_second</em>&#160;</td>
+          <td class="paramname"><em>gate_applied_later</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -764,6 +849,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>二つのゲートが連続して作用する新たなゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate_applied_first</td><td>先に状態に作用するゲート </td></tr>
+    <tr><td class="paramname">gate_applied_later</td><td>後に状態に作用するゲート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>二つのゲートを合成したゲート </dd></dl>
 
 </div>
 </div>
@@ -776,12 +870,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> <a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a> * gate::merge </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * &gt;&#160;</td>
           <td class="paramname"><em>gate_list</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>複数のゲートが連続して作用する新たなゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate_list</td><td>作用するゲート列。先頭要素から順番に状態に作用する。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>合成したゲート </dd></dl>
 
 </div>
 </div>
@@ -800,6 +902,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><code>qubit_index</code>を0へ射影するゲートを作成する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -818,6 +928,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><code>qubit_index</code>を1へ射影するゲートを作成する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -917,7 +1035,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> * &gt;&#160;</td>
           <td class="paramname"><em>gate_list</em>&#160;</td>
         </tr>
         <tr>
@@ -927,6 +1045,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>確率的に作用する量子ゲートを作成する。</p>
+<p>確率分布の総和が1でない場合、残った確率が採用されたときには何も作用しない。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distribution</td><td>確率分布 </td></tr>
+    <tr><td class="paramname">gate_list</td><td>作用する量子ゲート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>確率的に作用するゲート </dd></dl>
 
 </div>
 </div>
@@ -955,6 +1082,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(X\)回転ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -983,6 +1119,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(Y\)回転ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1011,6 +1156,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(Z\)回転ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>回転角 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1029,6 +1183,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(S\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1047,6 +1209,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(S^{\dagger}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1065,6 +1235,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(\sqrt{X}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1083,6 +1261,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(\sqrt{X}^{\dagger}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1101,6 +1287,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(\sqrt{Y}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1119,6 +1313,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(\sqrt{Y}^{\dagger}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1147,6 +1349,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SWAPゲートを作成する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index1</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index2</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1165,6 +1376,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(T\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1183,6 +1402,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(T^{\dagger}\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1201,6 +1428,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><code><a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a></code>の任意のサブクラスを、<code><a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a></code>のクラスの変換する。</p>
+<p>\(n\)-qubitゲートで \(n\)が非常に大きいとき、 \(d^2\)の大量のメモリを使用する点に注意。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate</td><td>変換するゲート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>変換された<code><a class="el" href="class_quantum_gate_matrix.html">QuantumGateMatrix</a></code>クラスのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1229,6 +1464,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>OpenQASMのU1ゲートを作成する。</p>
+<p>具体的なゲートについてはOpenQASMのマニュアルを参照 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lambda</td><td>回転角の第一引数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1263,6 +1507,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>OpenQASMのU2ゲートを作成する。</p>
+<p>具体的なゲートについてはOpenQASMのマニュアルを参照 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lambda</td><td>回転角の第一引数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>回転角の第二引数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1303,6 +1557,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>OpenQASMのU3ゲートを作成する。</p>
+<p>具体的なゲートについてはOpenQASMのマニュアルを参照 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lambda</td><td>回転角の第一引数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>回転角の第二引数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">theta</td><td>回転角の第三引数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1321,6 +1586,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(X\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1339,6 +1612,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(Y\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>
@@ -1357,6 +1638,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\(Z\)ゲートを作成する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">qubit_index</td><td>ターゲットとなる量子ビットの添え字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>作成されたゲートのインスタンス </dd></dl>
 
 </div>
 </div>

@@ -137,13 +137,13 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a> <a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> state::inner_product </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="state_8hpp.html#a46c8a3bfacca574ce8837112770f8c97">QuantumState</a> *&#160;</td>
-          <td class="paramname"><em>state1</em>, </td>
+          <td class="paramname"><em>state_bra</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="state_8hpp.html#a46c8a3bfacca574ce8837112770f8c97">QuantumState</a> *&#160;</td>
-          <td class="paramname"><em>state2</em>&#160;</td>
+          <td class="paramname"><em>state_ket</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,6 +152,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>量子状態間の内積を計算する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state_bra</td><td>内積のブラ側の量子状態 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state_ket</td><td>内積のケット側の量子状態 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>内積の値 </dd></dl>
 
 </div>
 </div>

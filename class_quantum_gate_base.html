@@ -216,7 +216,9 @@ Friends</h2></td></tr>
 <tr class="memitem:aa20ff6b729876f22b74f68a8b410b6ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1">DllExport</a> std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#aa20ff6b729876f22b74f68a8b410b6ad">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_quantum_gate_base.html">QuantumGateBase</a> *gate)</td></tr>
 <tr class="separator:aa20ff6b729876f22b74f68a8b410b6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>量子ゲートの基底クラス </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a432d4966cebb122ee728479e599a0cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a432d4966cebb122ee728479e599a0cd0">&#9670;&nbsp;</a></span>QuantumGateBase() <span class="overload">[1/2]</span></h2>
 
@@ -290,6 +292,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -319,6 +322,17 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートがある添え字の量子ビットにおいて、与えられたパウリ演算子と可換かどうかを判定する。</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qubit_index</td><td>量子ビットの添え字 </td></tr>
+    <tr><td class="paramname">pauli_type</td><td>比較するパウリ演算子。(I,X,Y,Z)が(0,1,2,3)に対応する。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 可換ではない </dd></dl>
 
 </div>
 </div>
@@ -344,6 +358,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のディープコピーを生成する</p>
+<dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a7ebba5f51e6cc3abb7dd2de720085005">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#a3e7db33a990b4db652bfc85789512f12">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a5b789d3861e24298a83b73d4416967ba">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#a08c5dc670163bd43777b725d70f8c92f">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#a0b2024c9ebedf735834c4af28ce3e951">QuantumGate_CPTP</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a10129446f90b77fefdca3c4717cfb2c4">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate_matrix.html#afca445d43d3f1ed147a99232a28b3407">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ad9408652ed9d6b98ff98c20e392fa9bf">QuantumGate_TwoQubit</a>, <a class="el" href="class_cls_pauli_gate.html#a08e7e53eb1439357a241fac57d065cf2">ClsPauliGate</a>, <a class="el" href="class_quantum_gate___probabilistic.html#adcaca817353bc4a55f3d21814e7d942c">QuantumGate_Probabilistic</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a8f9c74d044d246beb5cc1c93b6a21b9f">QuantumGate_OneQubit</a>.</p>
 
@@ -371,6 +387,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>コントロール量子ビットの添え字のリストを取得する</p>
+<dl class="section return"><dt>Returns</dt><dd>量子ビットの添え字のリスト </dd></dl>
 
 </div>
 </div>
@@ -388,6 +406,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートのプロパティ値を取得する</p>
+<p>ゲートのプロパティ値はゲートがパウリかどうかなどのゲート全体の性質の情報を持つ </p><dl class="section return"><dt>Returns</dt><dd>プロパティ値 </dd></dl>
 
 </div>
 </div>
@@ -413,6 +433,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>ターゲット量子ビットの添え字のリストを取得する</p>
+<dl class="section return"><dt>Returns</dt><dd>量子ビットの添え字のリスト </dd></dl>
 
 </div>
 </div>
@@ -430,6 +452,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートがクリフォードゲートかどうかを判定する</p>
+<dl class="section return"><dt>Returns</dt><dd>true クリフォードゲートである </dd>
+<dd>
+false クリフォードゲートではない </dd></dl>
 
 </div>
 </div>
@@ -448,6 +474,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>与えれたゲート<code>gate</code>と自身が可換かを判定する</p>
+<p>非可換であると判定されても、実際には可換であることもある。 可換と判定された場合は必ず可換である。 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gate</td><td>可換か比較するゲート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true 可換である </dd>
+<dd>
+false 非可換である </dd></dl>
 
 </div>
 </div>
@@ -465,6 +501,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲート行列が対角行列かどうかを判定する</p>
+<dl class="section return"><dt>Returns</dt><dd>true 対角行列である </dd>
+<dd>
+false 対角行列ではない </dd></dl>
 
 </div>
 </div>
@@ -482,6 +522,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートがFermionic Gaussianかどうかを判定する</p>
+<dl class="section return"><dt>Returns</dt><dd>true Fermionic Gaussianである </dd>
+<dd>
+false Fermionic Gaussianではない </dd></dl>
 
 </div>
 </div>
@@ -499,6 +543,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートがparametricかどうかを判定する</p>
+<dl class="section return"><dt>Returns</dt><dd>true parametricである </dd>
+<dd>
+false parametricではない </dd></dl>
 
 </div>
 </div>
@@ -516,6 +564,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>ゲートがパウリゲートかどうかを判定する</p>
+<dl class="section return"><dt>Returns</dt><dd>true パウリゲートである </dd>
+<dd>
+false パウリゲートではない </dd></dl>
 
 </div>
 </div>
@@ -568,6 +620,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>自身のゲート行列をセットする</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>行列をセットする変数の参照 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a5790be1d255ab3128bd4ed87e84282bc">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#aa7b4ff82df37f3a00b338719965a314d">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a3e4cbafdc1d2b18cd99a158a8c988450">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#ae5f9d62f08a88a90adf4d835288da5b0">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#af43bf517985605f23b53c8af5db24e07">QuantumGate_CPTP</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a2337cb139fcb30d06bb19251b8cc4b5e">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate_matrix.html#a96b281c3ecca58a7142dfb8caf2df243">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ae4079b1e8d9b186edcdef1b296849eb3">QuantumGate_TwoQubit</a>, <a class="el" href="class_cls_pauli_gate.html#a9c8c8f021607c3e3b63754d87593a256">ClsPauliGate</a>, <a class="el" href="class_quantum_gate___probabilistic.html#af4ac0707286c0e0b75e67a3ea3d16653">QuantumGate_Probabilistic</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a7d42beca3e8910f7cf3415d151c0db29">QuantumGate_OneQubit</a>.</p>
 
@@ -595,6 +654,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子ゲートのデバッグ情報の文字列を生成する</p>
+<dl class="section return"><dt>Returns</dt><dd>生成した文字列 </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_quantum_gate_matrix.html#a37224b63efebb2d2700d39711af25cca">QuantumGateMatrix</a>.</p>
 
@@ -623,6 +684,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子状態を更新する</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>更新する量子状態 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#aada8c1495c52d31011a771c17d91dd66">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#a484298b2b28b47cfdc69347596346ff9">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a90feff28c18beb70217820390d761943">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#a48183fd8c616dcb0bf366eb900ab267a">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a17f52abb37191a2e19b88b9a8fe17b3a">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#a4421abf521574ac847beca37d5097392">QuantumGate_CPTP</a>, <a class="el" href="class_quantum_gate_matrix.html#aadafa24202a5f512af6a9b4c7bdc96ef">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate___two_qubit.html#a541fabb265b575e0d0f136cc123ef7b9">QuantumGate_TwoQubit</a>, <a class="el" href="class_cls_pauli_gate.html#a42aad912a51b41e5d955eaeeced5affc">ClsPauliGate</a>, <a class="el" href="class_quantum_gate___probabilistic.html#a7231926d0c1eabe0d0f9fb8bf7fa6a65">QuantumGate_Probabilistic</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#afc4cddc3d34afed3041704d600cd49ce">QuantumGate_OneQubit</a>.</p>
 
@@ -662,6 +730,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子回路のデバッグ情報を出力する。</p>
+<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -698,6 +768,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>量子回路のデバッグ情報を出力する。</p>
+<dl class="section return"><dt>Returns</dt><dd>受け取ったストリーム </dd></dl>
 
 </div>
 </div>
@@ -743,6 +815,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>property of whole gate (e.g. Clifford or Pauli) </p>
 
 </div>
 </div>

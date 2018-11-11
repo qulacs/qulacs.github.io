@@ -50,6 +50,5 @@ var searchData=
   ['create_5fquantum_5fgate_5ffrom_5fstring',['create_quantum_gate_from_string',['../namespacegate.html#a036f67b109f55229afa2efcf118a2f0f',1,'gate']]],
   ['create_5fsplit_5fobservable',['create_split_observable',['../namespaceobservable.html#a9ceda396f44392f7c5a3e1919beb8790',1,'observable']]],
   ['cz',['CZ',['../namespacegate.html#a3e600801ff7c5ae10c03473409b68be6',1,'gate']]],
-  ['c_2b_2b_20quantum_20circuit_20simulator_20for_20research',['C++ Quantum Circuit Simulator for research',['../md_0__about__c_p_p_s_i_m.html',1,'']]],
   ['c_2b_2b_20tutorial',['C++ Tutorial',['../md_2__tutorial__c_p_p.html',1,'']]]
 ];
