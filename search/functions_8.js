@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['load',['load',['../class_quantum_state_base.html#abfec8784dc9e1a172be4cfb79e2d9876',1,'QuantumStateBase::load()'],['../class_quantum_state_cpu.html#a282753bcf9cfd1ebbd3a1ca88c657f17',1,'QuantumStateCpu::load()']]]
+  ['load',['load',['../class_quantum_state_base.html#a0c79a8619f3635e8d42116f1f17b95b3',1,'QuantumStateBase::load(const QuantumStateBase *state)=0'],['../class_quantum_state_base.html#aa2556372b296be0ff1094ea77e8f7e5e',1,'QuantumStateBase::load(const std::vector&lt; CPPCTYPE &gt; &amp;state)=0'],['../class_quantum_state_base.html#a99b14a73e61b1415582074f00694c31d',1,'QuantumStateBase::load(const CPPCTYPE *state)=0'],['../class_quantum_state_cpu.html#a2dfe01fb844c2262d4a758e2c8fd926b',1,'QuantumStateCpu::load(const QuantumStateBase *_state)'],['../class_quantum_state_cpu.html#a71ebc290da5a647d8477e0bb2bc44be1',1,'QuantumStateCpu::load(const std::vector&lt; CPPCTYPE &gt; &amp;_state)'],['../class_quantum_state_cpu.html#a0164258a80e0bdb30f6256b814ccb15e',1,'QuantumStateCpu::load(const CPPCTYPE *_state)']]]
 ];
