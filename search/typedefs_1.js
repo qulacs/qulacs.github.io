@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantumstate',['QuantumState',['../state_8hpp.html#a46c8a3bfacca574ce8837112770f8c97',1,'state.hpp']]]
+  ['observable',['Observable',['../circuit_8hpp.html#ae1bf06408606572f97c9b83eddb4b35d',1,'Observable():&#160;circuit.hpp'],['../observable_8hpp.html#ae1bf06408606572f97c9b83eddb4b35d',1,'Observable():&#160;observable.hpp'],['../simulator_8hpp.html#ae1bf06408606572f97c9b83eddb4b35d',1,'Observable():&#160;simulator.hpp']]]
 ];

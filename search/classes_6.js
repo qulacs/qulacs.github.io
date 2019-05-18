@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['targetqubitinfo',['TargetQubitInfo',['../class_target_qubit_info.html',1,'']]],
-  ['timer',['Timer',['../class_timer.html',1,'']]]
+  ['siglepaulioperator',['SiglePauliOperator',['../struct_sigle_pauli_operator.html',1,'']]],
+  ['singlepaulioperator',['SinglePauliOperator',['../class_single_pauli_operator.html',1,'']]]
 ];

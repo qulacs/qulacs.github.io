@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['paulioperator',['PauliOperator',['../class_pauli_operator.html',1,'']]]
+  ['hermitianquantumoperator',['HermitianQuantumOperator',['../class_hermitian_quantum_operator.html',1,'']]]
 ];

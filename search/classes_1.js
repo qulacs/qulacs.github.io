@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observable',['Observable',['../class_observable.html',1,'']]]
+  ['generalquantumoperator',['GeneralQuantumOperator',['../class_general_quantum_operator.html',1,'']]]
 ];

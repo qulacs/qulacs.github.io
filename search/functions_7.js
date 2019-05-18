@@ -6,7 +6,7 @@ var searchData=
   ['initialize_5frandom_5fstate',['initialize_random_state',['../class_quantum_circuit_simulator.html#afc20682ba6b5c83eecd7115c8f84c148',1,'QuantumCircuitSimulator']]],
   ['initialize_5fstate',['initialize_state',['../class_quantum_circuit_simulator.html#a03e1325a3b448ab867efeb4abd512291',1,'QuantumCircuitSimulator']]],
   ['inner_5fproduct',['inner_product',['../namespacestate.html#abc77a6eea522852c216504c9950d0902',1,'state']]],
-  ['instrument',['Instrument',['../namespacegate.html#a7e633721db7612145dd0205fc14e5a55',1,'gate']]],
+  ['instrument',['Instrument',['../namespacegate.html#a16519dac00fa1947c4a9a6b081ec24d4',1,'gate']]],
   ['int32',['int32',['../class_random.html#a63115c3c2fc4ec9ea61f9437727d3725',1,'Random']]],
   ['int64',['int64',['../class_random.html#abbe7222554860e1c50af39d4779ab27b',1,'Random']]],
   ['is_5fclifford',['is_Clifford',['../class_quantum_circuit.html#ab5f51b6cc1b8a18444d58dfa8d23d459',1,'QuantumCircuit::is_Clifford()'],['../class_quantum_gate_base.html#af069dd802086a04e94e2bdad8c11cf86',1,'QuantumGateBase::is_Clifford()']]],
@@ -17,6 +17,7 @@ var searchData=
   ['is_5fcommute_5fz',['is_commute_Z',['../class_target_qubit_info.html#a2ebb1823855dee9d5cbc7a715b75d67d',1,'TargetQubitInfo']]],
   ['is_5fdiagonal',['is_diagonal',['../class_quantum_gate_base.html#ac6d0beb4eb57f83e8ca604dd8e9bc1aa',1,'QuantumGateBase']]],
   ['is_5fgaussian',['is_Gaussian',['../class_quantum_circuit.html#a4b08fb6ec191464026b702855d02582c',1,'QuantumCircuit::is_Gaussian()'],['../class_quantum_gate_base.html#ad46d2ff2cc3992ce1462f4bd55dd3a81',1,'QuantumGateBase::is_Gaussian()']]],
+  ['is_5fhermitian',['is_hermitian',['../class_general_quantum_operator.html#a73f6cae42a7b4b0017ca6f65220c3c8d',1,'GeneralQuantumOperator']]],
   ['is_5fparametric',['is_parametric',['../class_quantum_gate_base.html#a1353f844edaf5cdb398a818e55ff3518',1,'QuantumGateBase']]],
   ['is_5fpauli',['is_Pauli',['../class_quantum_gate_base.html#a58dc8644cfd90c3481a210f3d9764f83',1,'QuantumGateBase']]]
 ];

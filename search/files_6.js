@@ -7,10 +7,16 @@ var searchData=
   ['gate_5fgeneral_2ehpp',['gate_general.hpp',['../gate__general_8hpp.html',1,'']]],
   ['gate_5fmatrix_2ecpp',['gate_matrix.cpp',['../gate__matrix_8cpp.html',1,'']]],
   ['gate_5fmatrix_2ehpp',['gate_matrix.hpp',['../gate__matrix_8hpp.html',1,'']]],
+  ['gate_5fmatrix_5fsparse_2ecpp',['gate_matrix_sparse.cpp',['../gate__matrix__sparse_8cpp.html',1,'']]],
+  ['gate_5fmatrix_5fsparse_2ehpp',['gate_matrix_sparse.hpp',['../gate__matrix__sparse_8hpp.html',1,'']]],
   ['gate_5fmerge_2ecpp',['gate_merge.cpp',['../gate__merge_8cpp.html',1,'']]],
   ['gate_5fmerge_2ehpp',['gate_merge.hpp',['../gate__merge_8hpp.html',1,'']]],
   ['gate_5fnamed_2ehpp',['gate_named.hpp',['../gate__named_8hpp.html',1,'']]],
   ['gate_5fnamed_5fone_2ehpp',['gate_named_one.hpp',['../gate__named__one_8hpp.html',1,'']]],
   ['gate_5fnamed_5fpauli_2ehpp',['gate_named_pauli.hpp',['../gate__named__pauli_8hpp.html',1,'']]],
-  ['gate_5fnamed_5ftwo_2ehpp',['gate_named_two.hpp',['../gate__named__two_8hpp.html',1,'']]]
+  ['gate_5fnamed_5ftwo_2ehpp',['gate_named_two.hpp',['../gate__named__two_8hpp.html',1,'']]],
+  ['gate_5freflect_2ehpp',['gate_reflect.hpp',['../gate__reflect_8hpp.html',1,'']]],
+  ['gate_5freversible_2ehpp',['gate_reversible.hpp',['../gate__reversible_8hpp.html',1,'']]],
+  ['general_5fquantum_5foperator_2ecpp',['general_quantum_operator.cpp',['../general__quantum__operator_8cpp.html',1,'']]],
+  ['general_5fquantum_5foperator_2ehpp',['general_quantum_operator.hpp',['../general__quantum__operator_8hpp.html',1,'']]]
 ];
