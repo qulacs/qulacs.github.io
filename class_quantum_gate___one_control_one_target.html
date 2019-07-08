@@ -171,6 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24038a6628cc26f282f2b70e90cdc5b4 inherit pub_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c86006bf3ad43ae91859056b4d6486 inherit pub_methods_class_quantum_gate_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a10c86006bf3ad43ae91859056b4d6486">commute_Pauli_at</a> (UINT qubit_index, UINT pauli_type) const</td></tr>
 <tr class="separator:a10c86006bf3ad43ae91859056b4d6486 inherit pub_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e009118ceb580decd29e802e51055c4 inherit pub_methods_class_quantum_gate_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a6e009118ceb580decd29e802e51055c4">get_name</a> () const</td></tr>
+<tr class="separator:a6e009118ceb580decd29e802e51055c4 inherit pub_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a193efa5ac000bb015a0479554f3d103d inherit pub_methods_class_quantum_gate_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a193efa5ac000bb015a0479554f3d103d">to_string</a> () const</td></tr>
 <tr class="separator:a193efa5ac000bb015a0479554f3d103d inherit pub_methods_class_quantum_gate_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -197,6 +199,8 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a548c9dad38fac9de1d95c88ceb807f7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate___one_control_one_target.html#a4a1f4f678ee738693490d2e33b40c236">T_UPDATE_FUNC</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate___one_control_one_target.html#a548c9dad38fac9de1d95c88ceb807f7f">_update_func</a></td></tr>
 <tr class="separator:a548c9dad38fac9de1d95c88ceb807f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd12bdff7d3a3784b68c2c1a2943af9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate___one_control_one_target.html#a4a1f4f678ee738693490d2e33b40c236">T_UPDATE_FUNC</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate___one_control_one_target.html#afd12bdff7d3a3784b68c2c1a2943af9b">_update_func_dm</a></td></tr>
+<tr class="separator:afd12bdff7d3a3784b68c2c1a2943af9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70d5bd62a58935de75cc5e4a07ad63a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantum_gate___one_control_one_target.html#abf436cdb0efc50279918aadeaac58dd8">T_GPU_UPDATE_FUNC</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate___one_control_one_target.html#aa70d5bd62a58935de75cc5e4a07ad63a">_update_func_gpu</a></td></tr>
 <tr class="separator:aa70d5bd62a58935de75cc5e4a07ad63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f91363897b8e6c7c42fdc2b36582a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8hpp.html#a7735902f9834765a562309c40bffbdf2">ComplexMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate___one_control_one_target.html#a1f91363897b8e6c7c42fdc2b36582a9c">_matrix_element</a></td></tr>
@@ -437,6 +441,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afd12bdff7d3a3784b68c2c1a2943af9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd12bdff7d3a3784b68c2c1a2943af9b">&#9670;&nbsp;</a></span>_update_func_dm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quantum_gate___one_control_one_target.html#a4a1f4f678ee738693490d2e33b40c236">T_UPDATE_FUNC</a>* QuantumGate_OneControlOneTarget::_update_func_dm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa70d5bd62a58935de75cc5e4a07ad63a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa70d5bd62a58935de75cc5e4a07ad63a">&#9670;&nbsp;</a></span>_update_func_gpu</h2>
 
@@ -460,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/yibe/repos/qulacs/src/cppsim/<a class="el" href="gate__named_8hpp_source.html">gate_named.hpp</a></li>
+<li>/Users/yibe/repos/qulacs/qulacs/src/cppsim/<a class="el" href="gate__named_8hpp_source.html">gate_named.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

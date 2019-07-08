@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sparsecomplexmatrix',['SparseComplexMatrix',['../type_8hpp.html#a625813e8f420d595b5b5bc1a0b2311cc',1,'type.hpp']]]
+  ['quantumstate',['QuantumState',['../state_8hpp.html#a46c8a3bfacca574ce8837112770f8c97',1,'state.hpp']]]
 ];

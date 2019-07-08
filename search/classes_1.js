@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['generalquantumoperator',['GeneralQuantumOperator',['../class_general_quantum_operator.html',1,'']]]
+  ['densitymatrixcpu',['DensityMatrixCpu',['../class_density_matrix_cpu.html',1,'']]]
 ];

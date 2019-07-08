@@ -134,16 +134,19 @@ Inheritance diagram for QuantumStateBase:</div>
  <div class="center">
   <img src="class_quantum_state_base.png" usemap="#QuantumStateBase_map" alt=""/>
   <map id="QuantumStateBase_map" name="QuantumStateBase_map">
-<area href="class_quantum_state_cpu.html" alt="QuantumStateCpu" shape="rect" coords="0,56,118,80"/>
+<area href="class_density_matrix_cpu.html" alt="DensityMatrixCpu" shape="rect" coords="0,56,118,80"/>
+<area href="class_quantum_state_cpu.html" alt="QuantumStateCpu" shape="rect" coords="128,56,246,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6317f908001e53eae725dc43df4a7d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#ad6317f908001e53eae725dc43df4a7d0">QuantumStateBase</a> (UINT qubit_count_)</td></tr>
-<tr class="separator:ad6317f908001e53eae725dc43df4a7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4615b5c0603f52de43a7f9f418368ec4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a4615b5c0603f52de43a7f9f418368ec4">QuantumStateBase</a> (UINT qubit_count_, bool <a class="el" href="class_quantum_state_base.html#add32be2dc8fc34f29d4ff735ec42bb6a">is_state_vector</a>)</td></tr>
+<tr class="separator:a4615b5c0603f52de43a7f9f418368ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8984a805ecfa8301639ced6e4ed78813"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a8984a805ecfa8301639ced6e4ed78813">~QuantumStateBase</a> ()</td></tr>
 <tr class="separator:a8984a805ecfa8301639ced6e4ed78813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add32be2dc8fc34f29d4ff735ec42bb6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#add32be2dc8fc34f29d4ff735ec42bb6a">is_state_vector</a> () const</td></tr>
+<tr class="separator:add32be2dc8fc34f29d4ff735ec42bb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6770231beeb94f7ae2ffd5edd41de94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#ae6770231beeb94f7ae2ffd5edd41de94">set_zero_state</a> ()=0</td></tr>
 <tr class="separator:ae6770231beeb94f7ae2ffd5edd41de94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e52c51458f509db825ab9ae38be8fb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a1e52c51458f509db825ab9ae38be8fb7">set_computational_basis</a> (ITYPE comp_basis)=0</td></tr>
@@ -210,6 +213,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af399d0d8c6cd63a5ea276dfe517258f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47e6ae6e6b0216dc5e97bb91ee5d168"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#aa47e6ae6e6b0216dc5e97bb91ee5d168">_qubit_count</a></td></tr>
 <tr class="separator:aa47e6ae6e6b0216dc5e97bb91ee5d168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfddfd609e3894acfa7362e25afc48ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#adfddfd609e3894acfa7362e25afc48ef">_is_state_vector</a></td></tr>
+<tr class="separator:adfddfd609e3894acfa7362e25afc48ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee78a1fefff11965aa686984f7ada28f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; UINT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#aee78a1fefff11965aa686984f7ada28f">_classical_register</a></td></tr>
 <tr class="separator:aee78a1fefff11965aa686984f7ada28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -223,8 +228,8 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>量子状態の基底クラス </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad6317f908001e53eae725dc43df4a7d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6317f908001e53eae725dc43df4a7d0">&#9670;&nbsp;</a></span>QuantumStateBase()</h2>
+<a id="a4615b5c0603f52de43a7f9f418368ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4615b5c0603f52de43a7f9f418368ec4">&#9670;&nbsp;</a></span>QuantumStateBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,8 +241,18 @@ Friends</h2></td></tr>
           <td class="memname">QuantumStateBase::QuantumStateBase </td>
           <td>(</td>
           <td class="paramtype">UINT&#160;</td>
-          <td class="paramname"><em>qubit_count_</em></td><td>)</td>
+          <td class="paramname"><em>qubit_count_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_state_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -308,7 +323,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子状態を足しこむ </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#afb954da29e849eecbbb9d93d74b1732d">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#afb954da29e849eecbbb9d93d74b1732d">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a5881dae7c867359738bfb54f618fd624">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -337,7 +352,7 @@ Friends</h2></td></tr>
 <p>バッファとして同じサイズの量子状態を作成する。</p>
 <dl class="section return"><dt>Returns</dt><dd>生成された量子状態 </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a6a6dd4dd601d5b6f265d7a5c3a05b67d">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -366,7 +381,7 @@ Friends</h2></td></tr>
 <p>自身の状態のディープコピーを生成する</p>
 <dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae493e084275b1bffc6c1839004806a26">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae493e084275b1bffc6c1839004806a26">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a40db213e7e7b869b03fbae975c1130bb">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -393,7 +408,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ab23c982b867ec91824e1d4afb1ac8668">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ab23c982b867ec91824e1d4afb1ac8668">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a8c140b84a34d1683a9c906802526231c">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -422,7 +437,7 @@ Friends</h2></td></tr>
 <p>量子状態をcsimのComplex型の配列として取得する</p>
 <dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a509c7fcb84630a35833846ec9023ff50">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a509c7fcb84630a35833846ec9023ff50">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#aebd11e81f3e992a98f04a9825e1738ce">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -451,7 +466,7 @@ Friends</h2></td></tr>
 <p>量子状態をC++の<code>std::complex&lt;double&gt;</code>の配列として取得する</p>
 <dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a4e0b15078856b9eaef1b2a3d2f5297ff">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a4e0b15078856b9eaef1b2a3d2f5297ff">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#adb9daa78ee40e21fab66e50b571f721c">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -540,7 +555,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子状態が配置されているメモリを保持するデバイス名を取得する。 </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a66c21de205ab1b828be4e493b8b35dc7">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a66c21de205ab1b828be4e493b8b35dc7">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a1e99e978b732389f6557e37a49f89496">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -569,7 +584,7 @@ Friends</h2></td></tr>
 <p>計算基底で測定した時得られる確率分布のエントロピーを計算する。</p>
 <dl class="section return"><dt>Returns</dt><dd>エントロピー </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a7e73429ab76cb78dc607ad98af091e01">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a7e73429ab76cb78dc607ad98af091e01">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a768a40706118c7bc4073f03e789f9dc8">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -605,7 +620,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>計算された周辺確率 </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a942a5988e0154006b69ca940c5398754">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a942a5988e0154006b69ca940c5398754">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#ab761f7e97c5e1336567595adce7272e6">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -634,7 +649,7 @@ Friends</h2></td></tr>
 <p>量子状態のノルムを計算する</p>
 <p>量子状態のノルムは非ユニタリなゲートを作用した時に小さくなる。 </p><dl class="section return"><dt>Returns</dt><dd>ノルム </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acd318e718f4bd27b09389056f0c0359c">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acd318e718f4bd27b09389056f0c0359c">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a3193c9b351526f2e318c987f98224fda">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -670,7 +685,33 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a736a84d755d9974e79c5d5f1168b568d">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a736a84d755d9974e79c5d5f1168b568d">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#af3fdd373faa4799bb9e15b894fc65ef2">DensityMatrixCpu</a>.</p>
+
+</div>
+</div>
+<a id="add32be2dc8fc34f29d4ff735ec42bb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add32be2dc8fc34f29d4ff735ec42bb6a">&#9670;&nbsp;</a></span>is_state_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool QuantumStateBase::is_state_vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>量子状態が状態ベクトルか密度行列かを判定する </p>
 
 </div>
 </div>
@@ -699,7 +740,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p><code>state</code>の量子状態を自身へコピーする。 </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a2dfe01fb844c2262d4a758e2c8fd926b">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a2dfe01fb844c2262d4a758e2c8fd926b">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a35872cc71578993395e0fcd0a4a0a812">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -728,7 +769,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p><code>state</code>の量子状態を自身へコピーする。 </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a71ebc290da5a647d8477e0bb2bc44be1">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a71ebc290da5a647d8477e0bb2bc44be1">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#aa2a70aee4669fbaf9e9070d5972b87a6">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -757,7 +798,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p><code>state</code>の量子状態を自身へコピーする。 </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a0164258a80e0bdb30f6256b814ccb15e">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a0164258a80e0bdb30f6256b814ccb15e">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a622c7bbe83b7cfed50028382b980b523">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -786,7 +827,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>複素数をかける </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ac80b2c600d0dc63fef5c42ff39e72925">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ac80b2c600d0dc63fef5c42ff39e72925">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a7644d0f79bcbdee5354d4c6e24af0f8e">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -821,7 +862,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a59b57ed1bd51ca0f578784cbfc67da2c">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a59b57ed1bd51ca0f578784cbfc67da2c">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a4a8ef401def78f78fac2cf9cf69ce78a">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -857,7 +898,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>サンプルされた値のリスト </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a728eb8a61c1bfecf94bf8d6e961413ac">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a728eb8a61c1bfecf94bf8d6e961413ac">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#ac68032459378f1bc59b14c2e657d6a2e">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -937,7 +978,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae47f17686cf8c69e3289fa91df333d47">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#ae47f17686cf8c69e3289fa91df333d47">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a86dbff57a54378d1a9008f3458a87e11">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -965,7 +1006,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子状態をHaar randomにサンプリングされた量子状態に初期化する </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a0cc55e1a4b216f76d671fe066467e46f">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a0cc55e1a4b216f76d671fe066467e46f">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a848f024b3368440a4c425ed2ccad5ce8">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1035,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子状態をシードを用いてHaar randomにサンプリングされた量子状態に初期化する </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aba7842f04163f1f25f1f2c24c1af210b">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aba7842f04163f1f25f1f2c24c1af210b">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a8ead40d18dcf868d2bc09688a0fe3d1d">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1063,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子状態を計算基底の0状態に初期化する </p>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aeade6e10bcd8a649b4e00e47ad3a93f5">QuantumStateCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#aeade6e10bcd8a649b4e00e47ad3a93f5">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a1530ee0e2816a5805eed5f3da94d95f0">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -1050,6 +1091,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>量子回路のデバッグ情報の文字列を生成する</p>
 <dl class="section return"><dt>Returns</dt><dd>生成した文字列 </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_density_matrix_cpu.html#aadf48dbbb1b396cda7b2f98de15b318d">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -1175,6 +1218,28 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="adfddfd609e3894acfa7362e25afc48ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfddfd609e3894acfa7362e25afc48ef">&#9670;&nbsp;</a></span>_is_state_vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuantumStateBase::_is_state_vector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa47e6ae6e6b0216dc5e97bb91ee5d168"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa47e6ae6e6b0216dc5e97bb91ee5d168">&#9670;&nbsp;</a></span>_qubit_count</h2>
 
@@ -1243,7 +1308,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/yibe/repos/qulacs/src/cppsim/<a class="el" href="state_8hpp_source.html">state.hpp</a></li>
+<li>/Users/yibe/repos/qulacs/qulacs/src/cppsim/<a class="el" href="state_8hpp_source.html">state.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

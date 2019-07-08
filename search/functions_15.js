@@ -3,6 +3,7 @@ var searchData=
   ['_7eclspauligate',['~ClsPauliGate',['../class_cls_pauli_gate.html#a39eb21913258a4a923d7a57d31647a05',1,'ClsPauliGate']]],
   ['_7eclspaulirotationgate',['~ClsPauliRotationGate',['../class_cls_pauli_rotation_gate.html#a009979036c7a3d289d3adac6a3599a8d',1,'ClsPauliRotationGate']]],
   ['_7eclsstatereflectiongate',['~ClsStateReflectionGate',['../class_cls_state_reflection_gate.html#afb4b7d803945431dd4cbdb6dcd36b7d3',1,'ClsStateReflectionGate']]],
+  ['_7edensitymatrixcpu',['~DensityMatrixCpu',['../class_density_matrix_cpu.html#a479024374b08f115f9b8c25664f6488f',1,'DensityMatrixCpu']]],
   ['_7egeneralquantumoperator',['~GeneralQuantumOperator',['../class_general_quantum_operator.html#aae8c23c34f84b00b6246adce85682fa7',1,'GeneralQuantumOperator']]],
   ['_7epaulioperator',['~PauliOperator',['../class_pauli_operator.html#ade501a8725c35a612c9bef1361e686d8',1,'PauliOperator']]],
   ['_7equantumcircuit',['~QuantumCircuit',['../class_quantum_circuit.html#af27517379e3cfa9e607ae939b568da71',1,'QuantumCircuit']]],

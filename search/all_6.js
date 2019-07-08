@@ -27,7 +27,7 @@ var searchData=
   ['add_5fsqrtxdag_5fgate',['add_sqrtXdag_gate',['../class_quantum_circuit.html#acfd1f28b5ec1c5a93969f6b870d5cafb',1,'QuantumCircuit']]],
   ['add_5fsqrty_5fgate',['add_sqrtY_gate',['../class_quantum_circuit.html#a6c4963e61dd1d12e21439394a8f88137',1,'QuantumCircuit']]],
   ['add_5fsqrtydag_5fgate',['add_sqrtYdag_gate',['../class_quantum_circuit.html#a0bc5e7b58c793240ce20dc9ac78a28de',1,'QuantumCircuit']]],
-  ['add_5fstate',['add_state',['../class_quantum_state_base.html#aa13aabc6ee08efb85f8c6a492fd5429a',1,'QuantumStateBase::add_state()'],['../class_quantum_state_cpu.html#afb954da29e849eecbbb9d93d74b1732d',1,'QuantumStateCpu::add_state()']]],
+  ['add_5fstate',['add_state',['../class_quantum_state_base.html#aa13aabc6ee08efb85f8c6a492fd5429a',1,'QuantumStateBase::add_state()'],['../class_quantum_state_cpu.html#afb954da29e849eecbbb9d93d74b1732d',1,'QuantumStateCpu::add_state()'],['../class_density_matrix_cpu.html#a5881dae7c867359738bfb54f618fd624',1,'DensityMatrixCpu::add_state()']]],
   ['add_5fswap_5fgate',['add_SWAP_gate',['../class_quantum_circuit.html#ae022abb32d98dddf23e7b981b837d0db',1,'QuantumCircuit']]],
   ['add_5ft_5fgate',['add_T_gate',['../class_quantum_circuit.html#a5f837e25aa59be8788cecb54219ecae5',1,'QuantumCircuit']]],
   ['add_5ftdag_5fgate',['add_Tdag_gate',['../class_quantum_circuit.html#ab96c199bef95eaa788b0bbf111ccc0fd',1,'QuantumCircuit']]],
@@ -37,5 +37,6 @@ var searchData=
   ['add_5fx_5fgate',['add_X_gate',['../class_quantum_circuit.html#a0ca05a7e4a764330cbb7efa37c71af59',1,'QuantumCircuit']]],
   ['add_5fy_5fgate',['add_Y_gate',['../class_quantum_circuit.html#a4791e7aae4457854ec8d1d6df2451573',1,'QuantumCircuit']]],
   ['add_5fz_5fgate',['add_Z_gate',['../class_quantum_circuit.html#af23107aa759128a6a2e3e6b4bebd236f',1,'QuantumCircuit']]],
-  ['allocate_5fbuffer',['allocate_buffer',['../class_quantum_state_base.html#afcaa5ea0b33580a915201f2d9c19fb8a',1,'QuantumStateBase::allocate_buffer()'],['../class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9',1,'QuantumStateCpu::allocate_buffer()']]]
+  ['allocate_5fbuffer',['allocate_buffer',['../class_quantum_state_base.html#afcaa5ea0b33580a915201f2d9c19fb8a',1,'QuantumStateBase::allocate_buffer()'],['../class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9',1,'QuantumStateCpu::allocate_buffer()'],['../class_density_matrix_cpu.html#a6a6dd4dd601d5b6f265d7a5c3a05b67d',1,'DensityMatrixCpu::allocate_buffer()']]],
+  ['amplitudedampingnoise',['AmplitudeDampingNoise',['../namespacegate.html#a3c1a6ece8ef5b17cd5419f6198033c42',1,'gate']]]
 ];

@@ -182,6 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24038a6628cc26f282f2b70e90cdc5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c86006bf3ad43ae91859056b4d6486"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a10c86006bf3ad43ae91859056b4d6486">commute_Pauli_at</a> (UINT qubit_index, UINT pauli_type) const</td></tr>
 <tr class="separator:a10c86006bf3ad43ae91859056b4d6486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e009118ceb580decd29e802e51055c4"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a6e009118ceb580decd29e802e51055c4">get_name</a> () const</td></tr>
+<tr class="separator:a6e009118ceb580decd29e802e51055c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a193efa5ac000bb015a0479554f3d103d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_gate_base.html#a193efa5ac000bb015a0479554f3d103d">to_string</a> () const</td></tr>
 <tr class="separator:a193efa5ac000bb015a0479554f3d103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -364,7 +366,7 @@ false 可換ではない </dd></dl>
 <p>自身のディープコピーを生成する</p>
 <dl class="section return"><dt>Returns</dt><dd>自身のディープコピー </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a7ebba5f51e6cc3abb7dd2de720085005">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#a3e7db33a990b4db652bfc85789512f12">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a5b789d3861e24298a83b73d4416967ba">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#a08c5dc670163bd43777b725d70f8c92f">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#a0b2024c9ebedf735834c4af28ce3e951">QuantumGate_CPTP</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a10129446f90b77fefdca3c4717cfb2c4">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate_matrix.html#afca445d43d3f1ed147a99232a28b3407">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate_sparse_matrix.html#a480612addecb9e611d43870ee488627a">QuantumGateSparseMatrix</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ad9408652ed9d6b98ff98c20e392fa9bf">QuantumGate_TwoQubit</a>, <a class="el" href="class_cls_pauli_gate.html#a08e7e53eb1439357a241fac57d065cf2">ClsPauliGate</a>, <a class="el" href="class_cls_state_reflection_gate.html#a81f90425748639e26615e95d150e6ddc">ClsStateReflectionGate</a>, <a class="el" href="class_quantum_gate___probabilistic.html#adcaca817353bc4a55f3d21814e7d942c">QuantumGate_Probabilistic</a>, <a class="el" href="class_cls_reversible_boolean_gate.html#a47b328e69c652a8f74f3a7efb1622c6b">ClsReversibleBooleanGate</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a8f9c74d044d246beb5cc1c93b6a21b9f">QuantumGate_OneQubit</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a7ebba5f51e6cc3abb7dd2de720085005">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#a3e7db33a990b4db652bfc85789512f12">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a5b789d3861e24298a83b73d4416967ba">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#a0b2024c9ebedf735834c4af28ce3e951">QuantumGate_CPTP</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#a08c5dc670163bd43777b725d70f8c92f">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a10129446f90b77fefdca3c4717cfb2c4">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ad9408652ed9d6b98ff98c20e392fa9bf">QuantumGate_TwoQubit</a>, <a class="el" href="class_quantum_gate_matrix.html#afca445d43d3f1ed147a99232a28b3407">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate_sparse_matrix.html#a480612addecb9e611d43870ee488627a">QuantumGateSparseMatrix</a>, <a class="el" href="class_quantum_gate___probabilistic.html#adcaca817353bc4a55f3d21814e7d942c">QuantumGate_Probabilistic</a>, <a class="el" href="class_cls_pauli_gate.html#a08e7e53eb1439357a241fac57d065cf2">ClsPauliGate</a>, <a class="el" href="class_cls_state_reflection_gate.html#a81f90425748639e26615e95d150e6ddc">ClsStateReflectionGate</a>, <a class="el" href="class_cls_reversible_boolean_gate.html#a47b328e69c652a8f74f3a7efb1622c6b">ClsReversibleBooleanGate</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a8f9c74d044d246beb5cc1c93b6a21b9f">QuantumGate_OneQubit</a>.</p>
 
 </div>
 </div>
@@ -392,6 +394,33 @@ false 可換ではない </dd></dl>
 </div><div class="memdoc">
 <p>コントロール量子ビットの添え字のリストを取得する</p>
 <dl class="section return"><dt>Returns</dt><dd>量子ビットの添え字のリスト </dd></dl>
+
+</div>
+</div>
+<a id="a6e009118ceb580decd29e802e51055c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e009118ceb580decd29e802e51055c4">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string QuantumGateBase::get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>量子ゲートの名前を出力する。</p>
+<dl class="section return"><dt>Returns</dt><dd>ゲート名 </dd></dl>
 
 </div>
 </div>
@@ -631,7 +660,7 @@ false パウリゲートではない </dd></dl>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a5790be1d255ab3128bd4ed87e84282bc">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#aa7b4ff82df37f3a00b338719965a314d">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a3e4cbafdc1d2b18cd99a158a8c988450">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#ae5f9d62f08a88a90adf4d835288da5b0">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#af43bf517985605f23b53c8af5db24e07">QuantumGate_CPTP</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a2337cb139fcb30d06bb19251b8cc4b5e">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate_matrix.html#a96b281c3ecca58a7142dfb8caf2df243">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate_sparse_matrix.html#ae003363dcfc97a08559c127b6fdf713f">QuantumGateSparseMatrix</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ae4079b1e8d9b186edcdef1b296849eb3">QuantumGate_TwoQubit</a>, <a class="el" href="class_cls_pauli_gate.html#a9c8c8f021607c3e3b63754d87593a256">ClsPauliGate</a>, <a class="el" href="class_quantum_gate___probabilistic.html#af4ac0707286c0e0b75e67a3ea3d16653">QuantumGate_Probabilistic</a>, <a class="el" href="class_cls_state_reflection_gate.html#a8633a850cba7d928b92bf3f29071ed43">ClsStateReflectionGate</a>, <a class="el" href="class_cls_reversible_boolean_gate.html#a44c4b01838e3a3a1c83f180ebd9fec4a">ClsReversibleBooleanGate</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a7d42beca3e8910f7cf3415d151c0db29">QuantumGate_OneQubit</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_gate___adaptive.html#a5790be1d255ab3128bd4ed87e84282bc">QuantumGate_Adaptive</a>, <a class="el" href="class_quantum_gate___instrument.html#aa7b4ff82df37f3a00b338719965a314d">QuantumGate_Instrument</a>, <a class="el" href="class_quantum_gate___one_qubit_rotation.html#a3e4cbafdc1d2b18cd99a158a8c988450">QuantumGate_OneQubitRotation</a>, <a class="el" href="class_quantum_gate___c_p_t_p.html#af43bf517985605f23b53c8af5db24e07">QuantumGate_CPTP</a>, <a class="el" href="class_cls_pauli_rotation_gate.html#ae5f9d62f08a88a90adf4d835288da5b0">ClsPauliRotationGate</a>, <a class="el" href="class_quantum_gate___one_control_one_target.html#a2337cb139fcb30d06bb19251b8cc4b5e">QuantumGate_OneControlOneTarget</a>, <a class="el" href="class_quantum_gate___two_qubit.html#ae4079b1e8d9b186edcdef1b296849eb3">QuantumGate_TwoQubit</a>, <a class="el" href="class_quantum_gate_matrix.html#a96b281c3ecca58a7142dfb8caf2df243">QuantumGateMatrix</a>, <a class="el" href="class_quantum_gate_sparse_matrix.html#ae003363dcfc97a08559c127b6fdf713f">QuantumGateSparseMatrix</a>, <a class="el" href="class_quantum_gate___probabilistic.html#af4ac0707286c0e0b75e67a3ea3d16653">QuantumGate_Probabilistic</a>, <a class="el" href="class_cls_pauli_gate.html#a9c8c8f021607c3e3b63754d87593a256">ClsPauliGate</a>, <a class="el" href="class_cls_state_reflection_gate.html#a8633a850cba7d928b92bf3f29071ed43">ClsStateReflectionGate</a>, <a class="el" href="class_cls_reversible_boolean_gate.html#a44c4b01838e3a3a1c83f180ebd9fec4a">ClsReversibleBooleanGate</a>, and <a class="el" href="class_quantum_gate___one_qubit.html#a7d42beca3e8910f7cf3415d151c0db29">QuantumGate_OneQubit</a>.</p>
 
 </div>
 </div>
@@ -897,8 +926,8 @@ false パウリゲートではない </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/yibe/repos/qulacs/src/cppsim/<a class="el" href="gate_8hpp_source.html">gate.hpp</a></li>
-<li>/Users/yibe/repos/qulacs/src/cppsim/<a class="el" href="gate_8cpp.html">gate.cpp</a></li>
+<li>/Users/yibe/repos/qulacs/qulacs/src/cppsim/<a class="el" href="gate_8hpp_source.html">gate.hpp</a></li>
+<li>/Users/yibe/repos/qulacs/qulacs/src/cppsim/<a class="el" href="gate_8cpp.html">gate.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

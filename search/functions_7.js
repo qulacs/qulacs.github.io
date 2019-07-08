@@ -19,5 +19,6 @@ var searchData=
   ['is_5fgaussian',['is_Gaussian',['../class_quantum_circuit.html#a4b08fb6ec191464026b702855d02582c',1,'QuantumCircuit::is_Gaussian()'],['../class_quantum_gate_base.html#ad46d2ff2cc3992ce1462f4bd55dd3a81',1,'QuantumGateBase::is_Gaussian()']]],
   ['is_5fhermitian',['is_hermitian',['../class_general_quantum_operator.html#a73f6cae42a7b4b0017ca6f65220c3c8d',1,'GeneralQuantumOperator']]],
   ['is_5fparametric',['is_parametric',['../class_quantum_gate_base.html#a1353f844edaf5cdb398a818e55ff3518',1,'QuantumGateBase']]],
-  ['is_5fpauli',['is_Pauli',['../class_quantum_gate_base.html#a58dc8644cfd90c3481a210f3d9764f83',1,'QuantumGateBase']]]
+  ['is_5fpauli',['is_Pauli',['../class_quantum_gate_base.html#a58dc8644cfd90c3481a210f3d9764f83',1,'QuantumGateBase']]],
+  ['is_5fstate_5fvector',['is_state_vector',['../class_quantum_state_base.html#add32be2dc8fc34f29d4ff735ec42bb6a',1,'QuantumStateBase']]]
 ];
