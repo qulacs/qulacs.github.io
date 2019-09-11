@@ -2,6 +2,7 @@ var searchData=
 [
   ['calculate_5fdepth',['calculate_depth',['../class_quantum_circuit.html#a222da304dd1a9f6e492f9dce7f02dd25',1,'QuantumCircuit']]],
   ['check_5fgate_5findex',['check_gate_index',['../circuit_8cpp.html#a892b45b10c1718adb1cdf5c7f79b970a',1,'circuit.cpp']]],
+  ['check_5fis_5funique_5findex_5flist',['check_is_unique_index_list',['../utility_8cpp.html#a7bc9fc9e11f0477233e34d474e919350',1,'check_is_unique_index_list(std::vector&lt; UINT &gt; index_list):&#160;utility.cpp'],['../utility_8hpp.html#a7bc9fc9e11f0477233e34d474e919350',1,'check_is_unique_index_list(std::vector&lt; UINT &gt; index_list):&#160;utility.cpp']]],
   ['check_5fpauli_5foperator',['check_Pauli_operator',['../general__quantum__operator_8cpp.html#af03af14721c172e0026028ae5267fad4',1,'check_Pauli_operator(const GeneralQuantumOperator *quantum_operator, const PauliOperator *pauli_operator):&#160;general_quantum_operator.cpp'],['../general__quantum__operator_8hpp.html#af03af14721c172e0026028ae5267fad4',1,'check_Pauli_operator(const GeneralQuantumOperator *quantum_operator, const PauliOperator *pauli_operator):&#160;general_quantum_operator.cpp']]],
   ['chfmt',['chfmt',['../utility_8cpp.html#abeeee13cfaecf08b2c45911dba7b997a',1,'chfmt(std::string &amp;ops):&#160;utility.cpp'],['../utility_8hpp.html#abd1d1b3d73be20911924977c5987a5a5',1,'chfmt(std::string &amp;ops):&#160;utility.cpp']]],
   ['clscnotgate',['ClsCNOTGate',['../class_cls_c_n_o_t_gate.html#ab345e775d8fb3c793f25f55f464f90a8',1,'ClsCNOTGate']]],
