@@ -9,5 +9,7 @@ var searchData=
   ['dephasingnoise',['DephasingNoise',['../namespacegate.html#ac8a56043230e652f3d396c6c45168147',1,'gate']]],
   ['depolarizingnoise',['DepolarizingNoise',['../namespacegate.html#a06db3f3402a364642b3a59805a848a4d',1,'gate']]],
   ['dim',['dim',['../class_quantum_state_base.html#aae99a61f59c1e89008abbdf38dc1d815',1,'QuantumStateBase']]],
-  ['dllexport',['DllExport',['../type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1',1,'type.hpp']]]
+  ['dllexport',['DllExport',['../type_8hpp.html#af83a0ad9d707a0bc5fe281b6e5c358a1',1,'type.hpp']]],
+  ['duplicate_5fdata_5fc',['duplicate_data_c',['../class_quantum_state_base.html#a7b6cc9b6997dd02faa8d51f39bcf6631',1,'QuantumStateBase::duplicate_data_c()'],['../class_quantum_state_cpu.html#a768fd12aaa2f57d916d914e27d8dd0b5',1,'QuantumStateCpu::duplicate_data_c()'],['../class_density_matrix_cpu.html#a21f5335bb38a310889610f78f0b8c8d2',1,'DensityMatrixCpu::duplicate_data_c()']]],
+  ['duplicate_5fdata_5fcpp',['duplicate_data_cpp',['../class_quantum_state_base.html#ab6be3e81fd9405e5a28213feefa69427',1,'QuantumStateBase::duplicate_data_cpp()'],['../class_quantum_state_cpu.html#a893f8b28f27183f92394b69d526094d0',1,'QuantumStateCpu::duplicate_data_cpp()'],['../class_density_matrix_cpu.html#a9fe3679a37f15be2accbe8159c6c15f6',1,'DensityMatrixCpu::duplicate_data_cpp()']]]
 ];

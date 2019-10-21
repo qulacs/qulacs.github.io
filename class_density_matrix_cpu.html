@@ -181,6 +181,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb9daa78ee40e21fab66e50b571f721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd11e81f3e992a98f04a9825e1738ce"><td class="memItemLeft" align="right" valign="top">virtual CTYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_density_matrix_cpu.html#aebd11e81f3e992a98f04a9825e1738ce">data_c</a> () const override</td></tr>
 <tr class="separator:aebd11e81f3e992a98f04a9825e1738ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f5335bb38a310889610f78f0b8c8d2"><td class="memItemLeft" align="right" valign="top">virtual CTYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_density_matrix_cpu.html#a21f5335bb38a310889610f78f0b8c8d2">duplicate_data_c</a> () const override</td></tr>
+<tr class="separator:a21f5335bb38a310889610f78f0b8c8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe3679a37f15be2accbe8159c6c15f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_density_matrix_cpu.html#a9fe3679a37f15be2accbe8159c6c15f6">duplicate_data_cpp</a> () const override</td></tr>
+<tr class="separator:a9fe3679a37f15be2accbe8159c6c15f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5881dae7c867359738bfb54f618fd624"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_density_matrix_cpu.html#a5881dae7c867359738bfb54f618fd624">add_state</a> (const <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *state) override</td></tr>
 <tr class="separator:a5881dae7c867359738bfb54f618fd624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7644d0f79bcbdee5354d4c6e24af0f8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_density_matrix_cpu.html#a7644d0f79bcbdee5354d4c6e24af0f8e">multiply_coef</a> (<a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a> coef) override</td></tr>
@@ -453,6 +457,64 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
 
 <p>Implements <a class="el" href="class_quantum_state_base.html#ad15d075fe5aed4f0dc5a5c0ed0e6d9f6">QuantumStateBase</a>.</p>
+
+</div>
+</div>
+<a id="a21f5335bb38a310889610f78f0b8c8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f5335bb38a310889610f78f0b8c8d2">&#9670;&nbsp;</a></span>duplicate_data_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CTYPE* DensityMatrixCpu::duplicate_data_c </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>量子状態をcsimのComplex型の配列として新たに確保する。</p>
+<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
+
+<p>Implements <a class="el" href="class_quantum_state_base.html#a7b6cc9b6997dd02faa8d51f39bcf6631">QuantumStateBase</a>.</p>
+
+</div>
+</div>
+<a id="a9fe3679a37f15be2accbe8159c6c15f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe3679a37f15be2accbe8159c6c15f6">&#9670;&nbsp;</a></span>duplicate_data_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="type_8hpp.html#a68e3d980a2e2455b01d58ddba811a48f">CPPCTYPE</a>* DensityMatrixCpu::duplicate_data_cpp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>量子状態をC++の<code>std::complex&lt;double&gt;</code>の配列として新たに確保する</p>
+<dl class="section return"><dt>Returns</dt><dd>複素ベクトルのポインタ </dd></dl>
+
+<p>Implements <a class="el" href="class_quantum_state_base.html#ab6be3e81fd9405e5a28213feefa69427">QuantumStateBase</a>.</p>
 
 </div>
 </div>
