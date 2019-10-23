@@ -161,10 +161,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0f317cac2846182abdecdc5808b8d5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1774505bdaecdc99d284d84bb50c46e0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a1774505bdaecdc99d284d84bb50c46e0">get_entropy</a> () const =0</td></tr>
 <tr class="separator:a1774505bdaecdc99d284d84bb50c46e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2578e4c1370cdbcfb9d60b80aba4098f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a2578e4c1370cdbcfb9d60b80aba4098f">get_norm</a> () const =0</td></tr>
-<tr class="separator:a2578e4c1370cdbcfb9d60b80aba4098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86ea604acda07cd2e16c8ef25fee5065"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a86ea604acda07cd2e16c8ef25fee5065">normalize</a> (double norm)=0</td></tr>
-<tr class="separator:a86ea604acda07cd2e16c8ef25fee5065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3fd2e714760b5ea1a9f13b83b811e6"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#a5a3fd2e714760b5ea1a9f13b83b811e6">get_squared_norm</a> () const =0</td></tr>
+<tr class="separator:a5a3fd2e714760b5ea1a9f13b83b811e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71b429a259af3ef96bddb396af32dfd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#aa71b429a259af3ef96bddb396af32dfd">normalize</a> (double squared_norm)=0</td></tr>
+<tr class="separator:aa71b429a259af3ef96bddb396af32dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcaa5ea0b33580a915201f2d9c19fb8a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#afcaa5ea0b33580a915201f2d9c19fb8a">allocate_buffer</a> () const =0</td></tr>
 <tr class="separator:afcaa5ea0b33580a915201f2d9c19fb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf14702bf22168bd47b249df93a7e7c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_base.html#aacf14702bf22168bd47b249df93a7e7c">copy</a> () const =0</td></tr>
@@ -686,8 +686,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a2578e4c1370cdbcfb9d60b80aba4098f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2578e4c1370cdbcfb9d60b80aba4098f">&#9670;&nbsp;</a></span>get_norm()</h2>
+<a id="a5a3fd2e714760b5ea1a9f13b83b811e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3fd2e714760b5ea1a9f13b83b811e6">&#9670;&nbsp;</a></span>get_squared_norm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,7 +696,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double QuantumStateBase::get_norm </td>
+          <td class="memname">virtual double QuantumStateBase::get_squared_norm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -711,7 +711,7 @@ Friends</h2></td></tr>
 <p>量子状態のノルムを計算する</p>
 <p>量子状態のノルムは非ユニタリなゲートを作用した時に小さくなる。 </p><dl class="section return"><dt>Returns</dt><dd>ノルム </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#acd318e718f4bd27b09389056f0c0359c">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a3193c9b351526f2e318c987f98224fda">DensityMatrixCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a965c94e37347c4a05b251ccd67fe770e">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a39943a7e6c2b6eb5b0f65aa10146c2f9">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>
@@ -893,8 +893,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a86ea604acda07cd2e16c8ef25fee5065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86ea604acda07cd2e16c8ef25fee5065">&#9670;&nbsp;</a></span>normalize()</h2>
+<a id="aa71b429a259af3ef96bddb396af32dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71b429a259af3ef96bddb396af32dfd">&#9670;&nbsp;</a></span>normalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -906,7 +906,7 @@ Friends</h2></td></tr>
           <td class="memname">virtual void QuantumStateBase::normalize </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>norm</em></td><td>)</td>
+          <td class="paramname"><em>squared_norm</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -924,7 +924,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#a59b57ed1bd51ca0f578784cbfc67da2c">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#a4a8ef401def78f78fac2cf9cf69ce78a">DensityMatrixCpu</a>.</p>
+<p>Implemented in <a class="el" href="class_quantum_state_cpu.html#af1f928cfbe12c431137e7cb019e5eac0">QuantumStateCpu</a>, and <a class="el" href="class_density_matrix_cpu.html#af6a465a8dadb07a5351b3fe04a53f9fe">DensityMatrixCpu</a>.</p>
 
 </div>
 </div>

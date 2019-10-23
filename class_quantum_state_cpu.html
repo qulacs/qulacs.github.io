@@ -155,10 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a942a5988e0154006b69ca940c5398754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e73429ab76cb78dc607ad98af091e01"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#a7e73429ab76cb78dc607ad98af091e01">get_entropy</a> () const override</td></tr>
 <tr class="separator:a7e73429ab76cb78dc607ad98af091e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd318e718f4bd27b09389056f0c0359c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#acd318e718f4bd27b09389056f0c0359c">get_norm</a> () const override</td></tr>
-<tr class="separator:acd318e718f4bd27b09389056f0c0359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b57ed1bd51ca0f578784cbfc67da2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#a59b57ed1bd51ca0f578784cbfc67da2c">normalize</a> (double norm) override</td></tr>
-<tr class="separator:a59b57ed1bd51ca0f578784cbfc67da2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965c94e37347c4a05b251ccd67fe770e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#a965c94e37347c4a05b251ccd67fe770e">get_squared_norm</a> () const override</td></tr>
+<tr class="separator:a965c94e37347c4a05b251ccd67fe770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f928cfbe12c431137e7cb019e5eac0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#af1f928cfbe12c431137e7cb019e5eac0">normalize</a> (double squared_norm) override</td></tr>
+<tr class="separator:af1f928cfbe12c431137e7cb019e5eac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb5e57ad1783a3e2673ad858bab006e9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#acb5e57ad1783a3e2673ad858bab006e9">allocate_buffer</a> () const override</td></tr>
 <tr class="separator:acb5e57ad1783a3e2673ad858bab006e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae493e084275b1bffc6c1839004806a26"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quantum_state_base.html">QuantumStateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantum_state_cpu.html#ae493e084275b1bffc6c1839004806a26">copy</a> () const override</td></tr>
@@ -607,8 +607,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acd318e718f4bd27b09389056f0c0359c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd318e718f4bd27b09389056f0c0359c">&#9670;&nbsp;</a></span>get_norm()</h2>
+<a id="a965c94e37347c4a05b251ccd67fe770e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965c94e37347c4a05b251ccd67fe770e">&#9670;&nbsp;</a></span>get_squared_norm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,7 +617,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double QuantumStateCpu::get_norm </td>
+          <td class="memname">virtual double QuantumStateCpu::get_squared_norm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -632,7 +632,7 @@ Additional Inherited Members</h2></td></tr>
 <p>量子状態のノルムを計算する</p>
 <p>量子状態のノルムは非ユニタリなゲートを作用した時に小さくなる。 </p><dl class="section return"><dt>Returns</dt><dd>ノルム </dd></dl>
 
-<p>Implements <a class="el" href="class_quantum_state_base.html#a2578e4c1370cdbcfb9d60b80aba4098f">QuantumStateBase</a>.</p>
+<p>Implements <a class="el" href="class_quantum_state_base.html#a5a3fd2e714760b5ea1a9f13b83b811e6">QuantumStateBase</a>.</p>
 
 </div>
 </div>
@@ -788,8 +788,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a59b57ed1bd51ca0f578784cbfc67da2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59b57ed1bd51ca0f578784cbfc67da2c">&#9670;&nbsp;</a></span>normalize()</h2>
+<a id="af1f928cfbe12c431137e7cb019e5eac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f928cfbe12c431137e7cb019e5eac0">&#9670;&nbsp;</a></span>normalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +801,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">virtual void QuantumStateCpu::normalize </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>norm</em></td><td>)</td>
+          <td class="paramname"><em>squared_norm</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -819,7 +819,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_quantum_state_base.html#a86ea604acda07cd2e16c8ef25fee5065">QuantumStateBase</a>.</p>
+<p>Implements <a class="el" href="class_quantum_state_base.html#aa71b429a259af3ef96bddb396af32dfd">QuantumStateBase</a>.</p>
 
 </div>
 </div>
